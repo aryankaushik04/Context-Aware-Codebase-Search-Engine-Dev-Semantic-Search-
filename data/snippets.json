@@ -1,0 +1,5002 @@
+[
+  {
+    "id": 1,
+    "description": "read file in python using open()",
+    "code": "with open('file.txt', 'r') as f:\n    data = f.read()"
+  },
+  {
+    "id": 2,
+    "description": "sort a list using built-in sort function",
+    "code": "my_list = [3, 1, 4, 1, 5, 9, 2, 6]\nmy_list.sort()\nprint(my_list)"
+  },
+  {
+    "id": 3,
+    "description": "list comprehension python example",
+    "code": "numbers = [1, 2, 3, 4, 5]\nsquares = [x**2 for x in numbers]\nprint(squares)"
+  },
+  {
+    "id": 4,
+    "description": "exception handling python example",
+    "code": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print('Cannot divide by zero!')"
+  },
+  {
+    "id": 5,
+    "description": "string manipulation in python",
+    "code": "text = 'hello world'\nupper_text = text.upper()\nprint(upper_text)"
+  },
+  {
+    "id": 6,
+    "description": "make HTTP requests in python using requests library",
+    "code": "import requests\nresponse = requests.get('https://api.github.com')\nprint(response.status_code)"
+  },
+  {
+    "id": 7,
+    "description": "handle JSON data in python",
+    "code": "import json\ndata = {'name': 'John', 'age': 30}\njson_string = json.dumps(data)\nprint(json_string)"
+  },
+  {
+    "id": 8,
+    "description": "Python function to calculate factorial",
+    "code": "def factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)"
+  },
+  {
+    "id": 9,
+    "description": "Python class example: Person",
+    "code": "class Person:\n    def __init__(self, name, age):\n        self.name = name\n        self.age = age\n\n    def greet(self):\n        print(f'Hello, my name is {self.name}')"
+  },
+  {
+    "id": 10,
+    "description": "read csv file in python using pandas",
+    "code": "import pandas as pd\ndf = pd.read_csv('data.csv')\nprint(df.head())"
+  },
+  {
+    "id": 11,
+    "description": "write to file in python",
+    "code": "with open('output.txt', 'w') as f:\n    f.write('Hello, Python!')"
+  },
+  {
+    "id": 12,
+    "description": "dictionary comprehension in python",
+    "code": "keys = ['a', 'b', 'c']\nvalues = [1, 2, 3]\nmy_dict = {k: v for k, v in zip(keys, values)}\nprint(my_dict)"
+  },
+  {
+    "id": 13,
+    "description": "filter list in python",
+    "code": "numbers = [1, 2, 3, 4, 5, 6]\neven_numbers = list(filter(lambda x: x % 2 == 0, numbers))\nprint(even_numbers)"
+  },
+  {
+    "id": 14,
+    "description": "merge two dictionaries in python",
+    "code": "dict1 = {'a': 1, 'b': 2}\ndict2 = {'c': 3, 'd': 4}\nmerged_dict = {**dict1, **dict2}\nprint(merged_dict)"
+  },
+  {
+    "id": 15,
+    "description": "get current directory in python",
+    "code": "import os\ncwd = os.getcwd()\nprint(cwd)"
+  },
+  {
+    "id": 16,
+    "description": "iterate over dictionary in python",
+    "code": "my_dict = {'a': 1, 'b': 2, 'c': 3}\nfor key, value in my_dict.items():\n    print(f'{key}: {value}')"
+  },
+  {
+    "id": 17,
+    "description": "find element in list in python",
+    "code": "my_list = ['apple', 'banana', 'cherry']\nif 'banana' in my_list:\n    print('Found banana!')"
+  },
+  {
+    "id": 18,
+    "description": "generate random numbers in python",
+    "code": "import random\nnum = random.randint(1, 100)\nprint(num)"
+  },
+  {
+    "id": 19,
+    "description": "measure execution time in python",
+    "code": "import time\nstart = time.time()\n# code to measure\ntime.sleep(1)\nend = time.time()\nprint(f'Time taken: {end - start}s')"
+  },
+  {
+    "id": 20,
+    "description": "read environment variable in python",
+    "code": "import os\napi_key = os.getenv('API_KEY', 'default_value')\nprint(api_key)"
+  },
+  {
+    "id": 1,
+    "description": "read file in python (sample 0)",
+    "code": "with open('file_0.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 2,
+    "description": "write to file in python (sample 1)",
+    "code": "with open('output_1.txt', 'w') as f:\n    f.write('data_1')"
+  },
+  {
+    "id": 3,
+    "description": "list comprehension example (sample 2)",
+    "code": "data = [x * 2 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 4,
+    "description": "dictionary comprehension (sample 3)",
+    "code": "mapping = {f'key_{j}': j * 3 for j in range(5)}"
+  },
+  {
+    "id": 5,
+    "description": "exception handling example (sample 4)",
+    "code": "try:\n    value = 100 / 4\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 6,
+    "description": "sort a list in python (sample 5)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=5 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 7,
+    "description": "string manipulation example (sample 6)",
+    "code": "text = 'python coding 6'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 8,
+    "description": "simple function definition (sample 7)",
+    "code": "def process_data_7(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 9,
+    "description": "class definition example (sample 8)",
+    "code": "class Model_8:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 10,
+    "description": "api request with requests (sample 9)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/9')\nprint(resp.json())"
+  },
+  {
+    "id": 11,
+    "description": "read file in python (sample 10)",
+    "code": "with open('file_10.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 12,
+    "description": "write to file in python (sample 11)",
+    "code": "with open('output_11.txt', 'w') as f:\n    f.write('data_11')"
+  },
+  {
+    "id": 13,
+    "description": "list comprehension example (sample 12)",
+    "code": "data = [x * 12 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 14,
+    "description": "dictionary comprehension (sample 13)",
+    "code": "mapping = {f'key_{j}': j * 13 for j in range(5)}"
+  },
+  {
+    "id": 15,
+    "description": "exception handling example (sample 14)",
+    "code": "try:\n    value = 100 / 14\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 16,
+    "description": "sort a list in python (sample 15)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=15 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 17,
+    "description": "string manipulation example (sample 16)",
+    "code": "text = 'python coding 16'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 18,
+    "description": "simple function definition (sample 17)",
+    "code": "def process_data_17(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 19,
+    "description": "class definition example (sample 18)",
+    "code": "class Model_18:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 20,
+    "description": "api request with requests (sample 19)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/19')\nprint(resp.json())"
+  },
+  {
+    "id": 21,
+    "description": "read file in python (sample 20)",
+    "code": "with open('file_20.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 22,
+    "description": "write to file in python (sample 21)",
+    "code": "with open('output_21.txt', 'w') as f:\n    f.write('data_21')"
+  },
+  {
+    "id": 23,
+    "description": "list comprehension example (sample 22)",
+    "code": "data = [x * 22 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 24,
+    "description": "dictionary comprehension (sample 23)",
+    "code": "mapping = {f'key_{j}': j * 23 for j in range(5)}"
+  },
+  {
+    "id": 25,
+    "description": "exception handling example (sample 24)",
+    "code": "try:\n    value = 100 / 24\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 26,
+    "description": "sort a list in python (sample 25)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=25 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 27,
+    "description": "string manipulation example (sample 26)",
+    "code": "text = 'python coding 26'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 28,
+    "description": "simple function definition (sample 27)",
+    "code": "def process_data_27(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 29,
+    "description": "class definition example (sample 28)",
+    "code": "class Model_28:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 30,
+    "description": "api request with requests (sample 29)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/29')\nprint(resp.json())"
+  },
+  {
+    "id": 31,
+    "description": "read file in python (sample 30)",
+    "code": "with open('file_30.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 32,
+    "description": "write to file in python (sample 31)",
+    "code": "with open('output_31.txt', 'w') as f:\n    f.write('data_31')"
+  },
+  {
+    "id": 33,
+    "description": "list comprehension example (sample 32)",
+    "code": "data = [x * 32 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 34,
+    "description": "dictionary comprehension (sample 33)",
+    "code": "mapping = {f'key_{j}': j * 33 for j in range(5)}"
+  },
+  {
+    "id": 35,
+    "description": "exception handling example (sample 34)",
+    "code": "try:\n    value = 100 / 34\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 36,
+    "description": "sort a list in python (sample 35)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=35 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 37,
+    "description": "string manipulation example (sample 36)",
+    "code": "text = 'python coding 36'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 38,
+    "description": "simple function definition (sample 37)",
+    "code": "def process_data_37(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 39,
+    "description": "class definition example (sample 38)",
+    "code": "class Model_38:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 40,
+    "description": "api request with requests (sample 39)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/39')\nprint(resp.json())"
+  },
+  {
+    "id": 41,
+    "description": "read file in python (sample 40)",
+    "code": "with open('file_40.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 42,
+    "description": "write to file in python (sample 41)",
+    "code": "with open('output_41.txt', 'w') as f:\n    f.write('data_41')"
+  },
+  {
+    "id": 43,
+    "description": "list comprehension example (sample 42)",
+    "code": "data = [x * 42 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 44,
+    "description": "dictionary comprehension (sample 43)",
+    "code": "mapping = {f'key_{j}': j * 43 for j in range(5)}"
+  },
+  {
+    "id": 45,
+    "description": "exception handling example (sample 44)",
+    "code": "try:\n    value = 100 / 44\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 46,
+    "description": "sort a list in python (sample 45)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=45 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 47,
+    "description": "string manipulation example (sample 46)",
+    "code": "text = 'python coding 46'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 48,
+    "description": "simple function definition (sample 47)",
+    "code": "def process_data_47(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 49,
+    "description": "class definition example (sample 48)",
+    "code": "class Model_48:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 50,
+    "description": "api request with requests (sample 49)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/49')\nprint(resp.json())"
+  },
+  {
+    "id": 51,
+    "description": "read file in python (sample 50)",
+    "code": "with open('file_50.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 52,
+    "description": "write to file in python (sample 51)",
+    "code": "with open('output_51.txt', 'w') as f:\n    f.write('data_51')"
+  },
+  {
+    "id": 53,
+    "description": "list comprehension example (sample 52)",
+    "code": "data = [x * 52 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 54,
+    "description": "dictionary comprehension (sample 53)",
+    "code": "mapping = {f'key_{j}': j * 53 for j in range(5)}"
+  },
+  {
+    "id": 55,
+    "description": "exception handling example (sample 54)",
+    "code": "try:\n    value = 100 / 54\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 56,
+    "description": "sort a list in python (sample 55)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=55 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 57,
+    "description": "string manipulation example (sample 56)",
+    "code": "text = 'python coding 56'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 58,
+    "description": "simple function definition (sample 57)",
+    "code": "def process_data_57(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 59,
+    "description": "class definition example (sample 58)",
+    "code": "class Model_58:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 60,
+    "description": "api request with requests (sample 59)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/59')\nprint(resp.json())"
+  },
+  {
+    "id": 61,
+    "description": "read file in python (sample 60)",
+    "code": "with open('file_60.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 62,
+    "description": "write to file in python (sample 61)",
+    "code": "with open('output_61.txt', 'w') as f:\n    f.write('data_61')"
+  },
+  {
+    "id": 63,
+    "description": "list comprehension example (sample 62)",
+    "code": "data = [x * 62 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 64,
+    "description": "dictionary comprehension (sample 63)",
+    "code": "mapping = {f'key_{j}': j * 63 for j in range(5)}"
+  },
+  {
+    "id": 65,
+    "description": "exception handling example (sample 64)",
+    "code": "try:\n    value = 100 / 64\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 66,
+    "description": "sort a list in python (sample 65)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=65 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 67,
+    "description": "string manipulation example (sample 66)",
+    "code": "text = 'python coding 66'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 68,
+    "description": "simple function definition (sample 67)",
+    "code": "def process_data_67(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 69,
+    "description": "class definition example (sample 68)",
+    "code": "class Model_68:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 70,
+    "description": "api request with requests (sample 69)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/69')\nprint(resp.json())"
+  },
+  {
+    "id": 71,
+    "description": "read file in python (sample 70)",
+    "code": "with open('file_70.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 72,
+    "description": "write to file in python (sample 71)",
+    "code": "with open('output_71.txt', 'w') as f:\n    f.write('data_71')"
+  },
+  {
+    "id": 73,
+    "description": "list comprehension example (sample 72)",
+    "code": "data = [x * 72 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 74,
+    "description": "dictionary comprehension (sample 73)",
+    "code": "mapping = {f'key_{j}': j * 73 for j in range(5)}"
+  },
+  {
+    "id": 75,
+    "description": "exception handling example (sample 74)",
+    "code": "try:\n    value = 100 / 74\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 76,
+    "description": "sort a list in python (sample 75)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=75 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 77,
+    "description": "string manipulation example (sample 76)",
+    "code": "text = 'python coding 76'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 78,
+    "description": "simple function definition (sample 77)",
+    "code": "def process_data_77(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 79,
+    "description": "class definition example (sample 78)",
+    "code": "class Model_78:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 80,
+    "description": "api request with requests (sample 79)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/79')\nprint(resp.json())"
+  },
+  {
+    "id": 81,
+    "description": "read file in python (sample 80)",
+    "code": "with open('file_80.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 82,
+    "description": "write to file in python (sample 81)",
+    "code": "with open('output_81.txt', 'w') as f:\n    f.write('data_81')"
+  },
+  {
+    "id": 83,
+    "description": "list comprehension example (sample 82)",
+    "code": "data = [x * 82 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 84,
+    "description": "dictionary comprehension (sample 83)",
+    "code": "mapping = {f'key_{j}': j * 83 for j in range(5)}"
+  },
+  {
+    "id": 85,
+    "description": "exception handling example (sample 84)",
+    "code": "try:\n    value = 100 / 84\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 86,
+    "description": "sort a list in python (sample 85)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=85 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 87,
+    "description": "string manipulation example (sample 86)",
+    "code": "text = 'python coding 86'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 88,
+    "description": "simple function definition (sample 87)",
+    "code": "def process_data_87(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 89,
+    "description": "class definition example (sample 88)",
+    "code": "class Model_88:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 90,
+    "description": "api request with requests (sample 89)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/89')\nprint(resp.json())"
+  },
+  {
+    "id": 91,
+    "description": "read file in python (sample 90)",
+    "code": "with open('file_90.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 92,
+    "description": "write to file in python (sample 91)",
+    "code": "with open('output_91.txt', 'w') as f:\n    f.write('data_91')"
+  },
+  {
+    "id": 93,
+    "description": "list comprehension example (sample 92)",
+    "code": "data = [x * 92 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 94,
+    "description": "dictionary comprehension (sample 93)",
+    "code": "mapping = {f'key_{j}': j * 93 for j in range(5)}"
+  },
+  {
+    "id": 95,
+    "description": "exception handling example (sample 94)",
+    "code": "try:\n    value = 100 / 94\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 96,
+    "description": "sort a list in python (sample 95)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=95 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 97,
+    "description": "string manipulation example (sample 96)",
+    "code": "text = 'python coding 96'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 98,
+    "description": "simple function definition (sample 97)",
+    "code": "def process_data_97(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 99,
+    "description": "class definition example (sample 98)",
+    "code": "class Model_98:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 100,
+    "description": "api request with requests (sample 99)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/99')\nprint(resp.json())"
+  },
+  {
+    "id": 101,
+    "description": "read file in python (sample 100)",
+    "code": "with open('file_100.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 102,
+    "description": "write to file in python (sample 101)",
+    "code": "with open('output_101.txt', 'w') as f:\n    f.write('data_101')"
+  },
+  {
+    "id": 103,
+    "description": "list comprehension example (sample 102)",
+    "code": "data = [x * 102 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 104,
+    "description": "dictionary comprehension (sample 103)",
+    "code": "mapping = {f'key_{j}': j * 103 for j in range(5)}"
+  },
+  {
+    "id": 105,
+    "description": "exception handling example (sample 104)",
+    "code": "try:\n    value = 100 / 104\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 106,
+    "description": "sort a list in python (sample 105)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=105 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 107,
+    "description": "string manipulation example (sample 106)",
+    "code": "text = 'python coding 106'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 108,
+    "description": "simple function definition (sample 107)",
+    "code": "def process_data_107(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 109,
+    "description": "class definition example (sample 108)",
+    "code": "class Model_108:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 110,
+    "description": "api request with requests (sample 109)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/109')\nprint(resp.json())"
+  },
+  {
+    "id": 111,
+    "description": "read file in python (sample 110)",
+    "code": "with open('file_110.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 112,
+    "description": "write to file in python (sample 111)",
+    "code": "with open('output_111.txt', 'w') as f:\n    f.write('data_111')"
+  },
+  {
+    "id": 113,
+    "description": "list comprehension example (sample 112)",
+    "code": "data = [x * 112 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 114,
+    "description": "dictionary comprehension (sample 113)",
+    "code": "mapping = {f'key_{j}': j * 113 for j in range(5)}"
+  },
+  {
+    "id": 115,
+    "description": "exception handling example (sample 114)",
+    "code": "try:\n    value = 100 / 114\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 116,
+    "description": "sort a list in python (sample 115)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=115 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 117,
+    "description": "string manipulation example (sample 116)",
+    "code": "text = 'python coding 116'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 118,
+    "description": "simple function definition (sample 117)",
+    "code": "def process_data_117(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 119,
+    "description": "class definition example (sample 118)",
+    "code": "class Model_118:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 120,
+    "description": "api request with requests (sample 119)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/119')\nprint(resp.json())"
+  },
+  {
+    "id": 121,
+    "description": "read file in python (sample 120)",
+    "code": "with open('file_120.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 122,
+    "description": "write to file in python (sample 121)",
+    "code": "with open('output_121.txt', 'w') as f:\n    f.write('data_121')"
+  },
+  {
+    "id": 123,
+    "description": "list comprehension example (sample 122)",
+    "code": "data = [x * 122 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 124,
+    "description": "dictionary comprehension (sample 123)",
+    "code": "mapping = {f'key_{j}': j * 123 for j in range(5)}"
+  },
+  {
+    "id": 125,
+    "description": "exception handling example (sample 124)",
+    "code": "try:\n    value = 100 / 124\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 126,
+    "description": "sort a list in python (sample 125)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=125 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 127,
+    "description": "string manipulation example (sample 126)",
+    "code": "text = 'python coding 126'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 128,
+    "description": "simple function definition (sample 127)",
+    "code": "def process_data_127(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 129,
+    "description": "class definition example (sample 128)",
+    "code": "class Model_128:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 130,
+    "description": "api request with requests (sample 129)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/129')\nprint(resp.json())"
+  },
+  {
+    "id": 131,
+    "description": "read file in python (sample 130)",
+    "code": "with open('file_130.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 132,
+    "description": "write to file in python (sample 131)",
+    "code": "with open('output_131.txt', 'w') as f:\n    f.write('data_131')"
+  },
+  {
+    "id": 133,
+    "description": "list comprehension example (sample 132)",
+    "code": "data = [x * 132 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 134,
+    "description": "dictionary comprehension (sample 133)",
+    "code": "mapping = {f'key_{j}': j * 133 for j in range(5)}"
+  },
+  {
+    "id": 135,
+    "description": "exception handling example (sample 134)",
+    "code": "try:\n    value = 100 / 134\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 136,
+    "description": "sort a list in python (sample 135)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=135 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 137,
+    "description": "string manipulation example (sample 136)",
+    "code": "text = 'python coding 136'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 138,
+    "description": "simple function definition (sample 137)",
+    "code": "def process_data_137(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 139,
+    "description": "class definition example (sample 138)",
+    "code": "class Model_138:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 140,
+    "description": "api request with requests (sample 139)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/139')\nprint(resp.json())"
+  },
+  {
+    "id": 141,
+    "description": "read file in python (sample 140)",
+    "code": "with open('file_140.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 142,
+    "description": "write to file in python (sample 141)",
+    "code": "with open('output_141.txt', 'w') as f:\n    f.write('data_141')"
+  },
+  {
+    "id": 143,
+    "description": "list comprehension example (sample 142)",
+    "code": "data = [x * 142 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 144,
+    "description": "dictionary comprehension (sample 143)",
+    "code": "mapping = {f'key_{j}': j * 143 for j in range(5)}"
+  },
+  {
+    "id": 145,
+    "description": "exception handling example (sample 144)",
+    "code": "try:\n    value = 100 / 144\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 146,
+    "description": "sort a list in python (sample 145)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=145 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 147,
+    "description": "string manipulation example (sample 146)",
+    "code": "text = 'python coding 146'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 148,
+    "description": "simple function definition (sample 147)",
+    "code": "def process_data_147(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 149,
+    "description": "class definition example (sample 148)",
+    "code": "class Model_148:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 150,
+    "description": "api request with requests (sample 149)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/149')\nprint(resp.json())"
+  },
+  {
+    "id": 151,
+    "description": "read file in python (sample 150)",
+    "code": "with open('file_150.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 152,
+    "description": "write to file in python (sample 151)",
+    "code": "with open('output_151.txt', 'w') as f:\n    f.write('data_151')"
+  },
+  {
+    "id": 153,
+    "description": "list comprehension example (sample 152)",
+    "code": "data = [x * 152 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 154,
+    "description": "dictionary comprehension (sample 153)",
+    "code": "mapping = {f'key_{j}': j * 153 for j in range(5)}"
+  },
+  {
+    "id": 155,
+    "description": "exception handling example (sample 154)",
+    "code": "try:\n    value = 100 / 154\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 156,
+    "description": "sort a list in python (sample 155)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=155 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 157,
+    "description": "string manipulation example (sample 156)",
+    "code": "text = 'python coding 156'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 158,
+    "description": "simple function definition (sample 157)",
+    "code": "def process_data_157(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 159,
+    "description": "class definition example (sample 158)",
+    "code": "class Model_158:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 160,
+    "description": "api request with requests (sample 159)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/159')\nprint(resp.json())"
+  },
+  {
+    "id": 161,
+    "description": "read file in python (sample 160)",
+    "code": "with open('file_160.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 162,
+    "description": "write to file in python (sample 161)",
+    "code": "with open('output_161.txt', 'w') as f:\n    f.write('data_161')"
+  },
+  {
+    "id": 163,
+    "description": "list comprehension example (sample 162)",
+    "code": "data = [x * 162 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 164,
+    "description": "dictionary comprehension (sample 163)",
+    "code": "mapping = {f'key_{j}': j * 163 for j in range(5)}"
+  },
+  {
+    "id": 165,
+    "description": "exception handling example (sample 164)",
+    "code": "try:\n    value = 100 / 164\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 166,
+    "description": "sort a list in python (sample 165)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=165 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 167,
+    "description": "string manipulation example (sample 166)",
+    "code": "text = 'python coding 166'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 168,
+    "description": "simple function definition (sample 167)",
+    "code": "def process_data_167(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 169,
+    "description": "class definition example (sample 168)",
+    "code": "class Model_168:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 170,
+    "description": "api request with requests (sample 169)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/169')\nprint(resp.json())"
+  },
+  {
+    "id": 171,
+    "description": "read file in python (sample 170)",
+    "code": "with open('file_170.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 172,
+    "description": "write to file in python (sample 171)",
+    "code": "with open('output_171.txt', 'w') as f:\n    f.write('data_171')"
+  },
+  {
+    "id": 173,
+    "description": "list comprehension example (sample 172)",
+    "code": "data = [x * 172 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 174,
+    "description": "dictionary comprehension (sample 173)",
+    "code": "mapping = {f'key_{j}': j * 173 for j in range(5)}"
+  },
+  {
+    "id": 175,
+    "description": "exception handling example (sample 174)",
+    "code": "try:\n    value = 100 / 174\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 176,
+    "description": "sort a list in python (sample 175)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=175 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 177,
+    "description": "string manipulation example (sample 176)",
+    "code": "text = 'python coding 176'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 178,
+    "description": "simple function definition (sample 177)",
+    "code": "def process_data_177(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 179,
+    "description": "class definition example (sample 178)",
+    "code": "class Model_178:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 180,
+    "description": "api request with requests (sample 179)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/179')\nprint(resp.json())"
+  },
+  {
+    "id": 181,
+    "description": "read file in python (sample 180)",
+    "code": "with open('file_180.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 182,
+    "description": "write to file in python (sample 181)",
+    "code": "with open('output_181.txt', 'w') as f:\n    f.write('data_181')"
+  },
+  {
+    "id": 183,
+    "description": "list comprehension example (sample 182)",
+    "code": "data = [x * 182 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 184,
+    "description": "dictionary comprehension (sample 183)",
+    "code": "mapping = {f'key_{j}': j * 183 for j in range(5)}"
+  },
+  {
+    "id": 185,
+    "description": "exception handling example (sample 184)",
+    "code": "try:\n    value = 100 / 184\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 186,
+    "description": "sort a list in python (sample 185)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=185 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 187,
+    "description": "string manipulation example (sample 186)",
+    "code": "text = 'python coding 186'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 188,
+    "description": "simple function definition (sample 187)",
+    "code": "def process_data_187(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 189,
+    "description": "class definition example (sample 188)",
+    "code": "class Model_188:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 190,
+    "description": "api request with requests (sample 189)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/189')\nprint(resp.json())"
+  },
+  {
+    "id": 191,
+    "description": "read file in python (sample 190)",
+    "code": "with open('file_190.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 192,
+    "description": "write to file in python (sample 191)",
+    "code": "with open('output_191.txt', 'w') as f:\n    f.write('data_191')"
+  },
+  {
+    "id": 193,
+    "description": "list comprehension example (sample 192)",
+    "code": "data = [x * 192 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 194,
+    "description": "dictionary comprehension (sample 193)",
+    "code": "mapping = {f'key_{j}': j * 193 for j in range(5)}"
+  },
+  {
+    "id": 195,
+    "description": "exception handling example (sample 194)",
+    "code": "try:\n    value = 100 / 194\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 196,
+    "description": "sort a list in python (sample 195)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=195 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 197,
+    "description": "string manipulation example (sample 196)",
+    "code": "text = 'python coding 196'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 198,
+    "description": "simple function definition (sample 197)",
+    "code": "def process_data_197(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 199,
+    "description": "class definition example (sample 198)",
+    "code": "class Model_198:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 200,
+    "description": "api request with requests (sample 199)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/199')\nprint(resp.json())"
+  },
+  {
+    "id": 201,
+    "description": "read file in python (sample 200)",
+    "code": "with open('file_200.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 202,
+    "description": "write to file in python (sample 201)",
+    "code": "with open('output_201.txt', 'w') as f:\n    f.write('data_201')"
+  },
+  {
+    "id": 203,
+    "description": "list comprehension example (sample 202)",
+    "code": "data = [x * 202 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 204,
+    "description": "dictionary comprehension (sample 203)",
+    "code": "mapping = {f'key_{j}': j * 203 for j in range(5)}"
+  },
+  {
+    "id": 205,
+    "description": "exception handling example (sample 204)",
+    "code": "try:\n    value = 100 / 204\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 206,
+    "description": "sort a list in python (sample 205)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=205 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 207,
+    "description": "string manipulation example (sample 206)",
+    "code": "text = 'python coding 206'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 208,
+    "description": "simple function definition (sample 207)",
+    "code": "def process_data_207(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 209,
+    "description": "class definition example (sample 208)",
+    "code": "class Model_208:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 210,
+    "description": "api request with requests (sample 209)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/209')\nprint(resp.json())"
+  },
+  {
+    "id": 211,
+    "description": "read file in python (sample 210)",
+    "code": "with open('file_210.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 212,
+    "description": "write to file in python (sample 211)",
+    "code": "with open('output_211.txt', 'w') as f:\n    f.write('data_211')"
+  },
+  {
+    "id": 213,
+    "description": "list comprehension example (sample 212)",
+    "code": "data = [x * 212 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 214,
+    "description": "dictionary comprehension (sample 213)",
+    "code": "mapping = {f'key_{j}': j * 213 for j in range(5)}"
+  },
+  {
+    "id": 215,
+    "description": "exception handling example (sample 214)",
+    "code": "try:\n    value = 100 / 214\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 216,
+    "description": "sort a list in python (sample 215)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=215 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 217,
+    "description": "string manipulation example (sample 216)",
+    "code": "text = 'python coding 216'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 218,
+    "description": "simple function definition (sample 217)",
+    "code": "def process_data_217(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 219,
+    "description": "class definition example (sample 218)",
+    "code": "class Model_218:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 220,
+    "description": "api request with requests (sample 219)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/219')\nprint(resp.json())"
+  },
+  {
+    "id": 221,
+    "description": "read file in python (sample 220)",
+    "code": "with open('file_220.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 222,
+    "description": "write to file in python (sample 221)",
+    "code": "with open('output_221.txt', 'w') as f:\n    f.write('data_221')"
+  },
+  {
+    "id": 223,
+    "description": "list comprehension example (sample 222)",
+    "code": "data = [x * 222 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 224,
+    "description": "dictionary comprehension (sample 223)",
+    "code": "mapping = {f'key_{j}': j * 223 for j in range(5)}"
+  },
+  {
+    "id": 225,
+    "description": "exception handling example (sample 224)",
+    "code": "try:\n    value = 100 / 224\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 226,
+    "description": "sort a list in python (sample 225)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=225 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 227,
+    "description": "string manipulation example (sample 226)",
+    "code": "text = 'python coding 226'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 228,
+    "description": "simple function definition (sample 227)",
+    "code": "def process_data_227(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 229,
+    "description": "class definition example (sample 228)",
+    "code": "class Model_228:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 230,
+    "description": "api request with requests (sample 229)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/229')\nprint(resp.json())"
+  },
+  {
+    "id": 231,
+    "description": "read file in python (sample 230)",
+    "code": "with open('file_230.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 232,
+    "description": "write to file in python (sample 231)",
+    "code": "with open('output_231.txt', 'w') as f:\n    f.write('data_231')"
+  },
+  {
+    "id": 233,
+    "description": "list comprehension example (sample 232)",
+    "code": "data = [x * 232 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 234,
+    "description": "dictionary comprehension (sample 233)",
+    "code": "mapping = {f'key_{j}': j * 233 for j in range(5)}"
+  },
+  {
+    "id": 235,
+    "description": "exception handling example (sample 234)",
+    "code": "try:\n    value = 100 / 234\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 236,
+    "description": "sort a list in python (sample 235)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=235 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 237,
+    "description": "string manipulation example (sample 236)",
+    "code": "text = 'python coding 236'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 238,
+    "description": "simple function definition (sample 237)",
+    "code": "def process_data_237(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 239,
+    "description": "class definition example (sample 238)",
+    "code": "class Model_238:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 240,
+    "description": "api request with requests (sample 239)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/239')\nprint(resp.json())"
+  },
+  {
+    "id": 241,
+    "description": "read file in python (sample 240)",
+    "code": "with open('file_240.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 242,
+    "description": "write to file in python (sample 241)",
+    "code": "with open('output_241.txt', 'w') as f:\n    f.write('data_241')"
+  },
+  {
+    "id": 243,
+    "description": "list comprehension example (sample 242)",
+    "code": "data = [x * 242 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 244,
+    "description": "dictionary comprehension (sample 243)",
+    "code": "mapping = {f'key_{j}': j * 243 for j in range(5)}"
+  },
+  {
+    "id": 245,
+    "description": "exception handling example (sample 244)",
+    "code": "try:\n    value = 100 / 244\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 246,
+    "description": "sort a list in python (sample 245)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=245 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 247,
+    "description": "string manipulation example (sample 246)",
+    "code": "text = 'python coding 246'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 248,
+    "description": "simple function definition (sample 247)",
+    "code": "def process_data_247(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 249,
+    "description": "class definition example (sample 248)",
+    "code": "class Model_248:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 250,
+    "description": "api request with requests (sample 249)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/249')\nprint(resp.json())"
+  },
+  {
+    "id": 251,
+    "description": "read file in python (sample 250)",
+    "code": "with open('file_250.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 252,
+    "description": "write to file in python (sample 251)",
+    "code": "with open('output_251.txt', 'w') as f:\n    f.write('data_251')"
+  },
+  {
+    "id": 253,
+    "description": "list comprehension example (sample 252)",
+    "code": "data = [x * 252 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 254,
+    "description": "dictionary comprehension (sample 253)",
+    "code": "mapping = {f'key_{j}': j * 253 for j in range(5)}"
+  },
+  {
+    "id": 255,
+    "description": "exception handling example (sample 254)",
+    "code": "try:\n    value = 100 / 254\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 256,
+    "description": "sort a list in python (sample 255)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=255 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 257,
+    "description": "string manipulation example (sample 256)",
+    "code": "text = 'python coding 256'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 258,
+    "description": "simple function definition (sample 257)",
+    "code": "def process_data_257(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 259,
+    "description": "class definition example (sample 258)",
+    "code": "class Model_258:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 260,
+    "description": "api request with requests (sample 259)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/259')\nprint(resp.json())"
+  },
+  {
+    "id": 261,
+    "description": "read file in python (sample 260)",
+    "code": "with open('file_260.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 262,
+    "description": "write to file in python (sample 261)",
+    "code": "with open('output_261.txt', 'w') as f:\n    f.write('data_261')"
+  },
+  {
+    "id": 263,
+    "description": "list comprehension example (sample 262)",
+    "code": "data = [x * 262 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 264,
+    "description": "dictionary comprehension (sample 263)",
+    "code": "mapping = {f'key_{j}': j * 263 for j in range(5)}"
+  },
+  {
+    "id": 265,
+    "description": "exception handling example (sample 264)",
+    "code": "try:\n    value = 100 / 264\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 266,
+    "description": "sort a list in python (sample 265)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=265 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 267,
+    "description": "string manipulation example (sample 266)",
+    "code": "text = 'python coding 266'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 268,
+    "description": "simple function definition (sample 267)",
+    "code": "def process_data_267(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 269,
+    "description": "class definition example (sample 268)",
+    "code": "class Model_268:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 270,
+    "description": "api request with requests (sample 269)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/269')\nprint(resp.json())"
+  },
+  {
+    "id": 271,
+    "description": "read file in python (sample 270)",
+    "code": "with open('file_270.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 272,
+    "description": "write to file in python (sample 271)",
+    "code": "with open('output_271.txt', 'w') as f:\n    f.write('data_271')"
+  },
+  {
+    "id": 273,
+    "description": "list comprehension example (sample 272)",
+    "code": "data = [x * 272 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 274,
+    "description": "dictionary comprehension (sample 273)",
+    "code": "mapping = {f'key_{j}': j * 273 for j in range(5)}"
+  },
+  {
+    "id": 275,
+    "description": "exception handling example (sample 274)",
+    "code": "try:\n    value = 100 / 274\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 276,
+    "description": "sort a list in python (sample 275)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=275 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 277,
+    "description": "string manipulation example (sample 276)",
+    "code": "text = 'python coding 276'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 278,
+    "description": "simple function definition (sample 277)",
+    "code": "def process_data_277(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 279,
+    "description": "class definition example (sample 278)",
+    "code": "class Model_278:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 280,
+    "description": "api request with requests (sample 279)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/279')\nprint(resp.json())"
+  },
+  {
+    "id": 281,
+    "description": "read file in python (sample 280)",
+    "code": "with open('file_280.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 282,
+    "description": "write to file in python (sample 281)",
+    "code": "with open('output_281.txt', 'w') as f:\n    f.write('data_281')"
+  },
+  {
+    "id": 283,
+    "description": "list comprehension example (sample 282)",
+    "code": "data = [x * 282 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 284,
+    "description": "dictionary comprehension (sample 283)",
+    "code": "mapping = {f'key_{j}': j * 283 for j in range(5)}"
+  },
+  {
+    "id": 285,
+    "description": "exception handling example (sample 284)",
+    "code": "try:\n    value = 100 / 284\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 286,
+    "description": "sort a list in python (sample 285)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=285 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 287,
+    "description": "string manipulation example (sample 286)",
+    "code": "text = 'python coding 286'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 288,
+    "description": "simple function definition (sample 287)",
+    "code": "def process_data_287(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 289,
+    "description": "class definition example (sample 288)",
+    "code": "class Model_288:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 290,
+    "description": "api request with requests (sample 289)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/289')\nprint(resp.json())"
+  },
+  {
+    "id": 291,
+    "description": "read file in python (sample 290)",
+    "code": "with open('file_290.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 292,
+    "description": "write to file in python (sample 291)",
+    "code": "with open('output_291.txt', 'w') as f:\n    f.write('data_291')"
+  },
+  {
+    "id": 293,
+    "description": "list comprehension example (sample 292)",
+    "code": "data = [x * 292 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 294,
+    "description": "dictionary comprehension (sample 293)",
+    "code": "mapping = {f'key_{j}': j * 293 for j in range(5)}"
+  },
+  {
+    "id": 295,
+    "description": "exception handling example (sample 294)",
+    "code": "try:\n    value = 100 / 294\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 296,
+    "description": "sort a list in python (sample 295)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=295 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 297,
+    "description": "string manipulation example (sample 296)",
+    "code": "text = 'python coding 296'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 298,
+    "description": "simple function definition (sample 297)",
+    "code": "def process_data_297(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 299,
+    "description": "class definition example (sample 298)",
+    "code": "class Model_298:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 300,
+    "description": "api request with requests (sample 299)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/299')\nprint(resp.json())"
+  },
+  {
+    "id": 301,
+    "description": "read file in python (sample 300)",
+    "code": "with open('file_300.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 302,
+    "description": "write to file in python (sample 301)",
+    "code": "with open('output_301.txt', 'w') as f:\n    f.write('data_301')"
+  },
+  {
+    "id": 303,
+    "description": "list comprehension example (sample 302)",
+    "code": "data = [x * 302 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 304,
+    "description": "dictionary comprehension (sample 303)",
+    "code": "mapping = {f'key_{j}': j * 303 for j in range(5)}"
+  },
+  {
+    "id": 305,
+    "description": "exception handling example (sample 304)",
+    "code": "try:\n    value = 100 / 304\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 306,
+    "description": "sort a list in python (sample 305)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=305 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 307,
+    "description": "string manipulation example (sample 306)",
+    "code": "text = 'python coding 306'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 308,
+    "description": "simple function definition (sample 307)",
+    "code": "def process_data_307(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 309,
+    "description": "class definition example (sample 308)",
+    "code": "class Model_308:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 310,
+    "description": "api request with requests (sample 309)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/309')\nprint(resp.json())"
+  },
+  {
+    "id": 311,
+    "description": "read file in python (sample 310)",
+    "code": "with open('file_310.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 312,
+    "description": "write to file in python (sample 311)",
+    "code": "with open('output_311.txt', 'w') as f:\n    f.write('data_311')"
+  },
+  {
+    "id": 313,
+    "description": "list comprehension example (sample 312)",
+    "code": "data = [x * 312 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 314,
+    "description": "dictionary comprehension (sample 313)",
+    "code": "mapping = {f'key_{j}': j * 313 for j in range(5)}"
+  },
+  {
+    "id": 315,
+    "description": "exception handling example (sample 314)",
+    "code": "try:\n    value = 100 / 314\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 316,
+    "description": "sort a list in python (sample 315)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=315 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 317,
+    "description": "string manipulation example (sample 316)",
+    "code": "text = 'python coding 316'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 318,
+    "description": "simple function definition (sample 317)",
+    "code": "def process_data_317(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 319,
+    "description": "class definition example (sample 318)",
+    "code": "class Model_318:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 320,
+    "description": "api request with requests (sample 319)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/319')\nprint(resp.json())"
+  },
+  {
+    "id": 321,
+    "description": "read file in python (sample 320)",
+    "code": "with open('file_320.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 322,
+    "description": "write to file in python (sample 321)",
+    "code": "with open('output_321.txt', 'w') as f:\n    f.write('data_321')"
+  },
+  {
+    "id": 323,
+    "description": "list comprehension example (sample 322)",
+    "code": "data = [x * 322 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 324,
+    "description": "dictionary comprehension (sample 323)",
+    "code": "mapping = {f'key_{j}': j * 323 for j in range(5)}"
+  },
+  {
+    "id": 325,
+    "description": "exception handling example (sample 324)",
+    "code": "try:\n    value = 100 / 324\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 326,
+    "description": "sort a list in python (sample 325)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=325 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 327,
+    "description": "string manipulation example (sample 326)",
+    "code": "text = 'python coding 326'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 328,
+    "description": "simple function definition (sample 327)",
+    "code": "def process_data_327(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 329,
+    "description": "class definition example (sample 328)",
+    "code": "class Model_328:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 330,
+    "description": "api request with requests (sample 329)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/329')\nprint(resp.json())"
+  },
+  {
+    "id": 331,
+    "description": "read file in python (sample 330)",
+    "code": "with open('file_330.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 332,
+    "description": "write to file in python (sample 331)",
+    "code": "with open('output_331.txt', 'w') as f:\n    f.write('data_331')"
+  },
+  {
+    "id": 333,
+    "description": "list comprehension example (sample 332)",
+    "code": "data = [x * 332 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 334,
+    "description": "dictionary comprehension (sample 333)",
+    "code": "mapping = {f'key_{j}': j * 333 for j in range(5)}"
+  },
+  {
+    "id": 335,
+    "description": "exception handling example (sample 334)",
+    "code": "try:\n    value = 100 / 334\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 336,
+    "description": "sort a list in python (sample 335)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=335 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 337,
+    "description": "string manipulation example (sample 336)",
+    "code": "text = 'python coding 336'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 338,
+    "description": "simple function definition (sample 337)",
+    "code": "def process_data_337(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 339,
+    "description": "class definition example (sample 338)",
+    "code": "class Model_338:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 340,
+    "description": "api request with requests (sample 339)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/339')\nprint(resp.json())"
+  },
+  {
+    "id": 341,
+    "description": "read file in python (sample 340)",
+    "code": "with open('file_340.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 342,
+    "description": "write to file in python (sample 341)",
+    "code": "with open('output_341.txt', 'w') as f:\n    f.write('data_341')"
+  },
+  {
+    "id": 343,
+    "description": "list comprehension example (sample 342)",
+    "code": "data = [x * 342 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 344,
+    "description": "dictionary comprehension (sample 343)",
+    "code": "mapping = {f'key_{j}': j * 343 for j in range(5)}"
+  },
+  {
+    "id": 345,
+    "description": "exception handling example (sample 344)",
+    "code": "try:\n    value = 100 / 344\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 346,
+    "description": "sort a list in python (sample 345)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=345 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 347,
+    "description": "string manipulation example (sample 346)",
+    "code": "text = 'python coding 346'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 348,
+    "description": "simple function definition (sample 347)",
+    "code": "def process_data_347(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 349,
+    "description": "class definition example (sample 348)",
+    "code": "class Model_348:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 350,
+    "description": "api request with requests (sample 349)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/349')\nprint(resp.json())"
+  },
+  {
+    "id": 351,
+    "description": "read file in python (sample 350)",
+    "code": "with open('file_350.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 352,
+    "description": "write to file in python (sample 351)",
+    "code": "with open('output_351.txt', 'w') as f:\n    f.write('data_351')"
+  },
+  {
+    "id": 353,
+    "description": "list comprehension example (sample 352)",
+    "code": "data = [x * 352 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 354,
+    "description": "dictionary comprehension (sample 353)",
+    "code": "mapping = {f'key_{j}': j * 353 for j in range(5)}"
+  },
+  {
+    "id": 355,
+    "description": "exception handling example (sample 354)",
+    "code": "try:\n    value = 100 / 354\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 356,
+    "description": "sort a list in python (sample 355)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=355 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 357,
+    "description": "string manipulation example (sample 356)",
+    "code": "text = 'python coding 356'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 358,
+    "description": "simple function definition (sample 357)",
+    "code": "def process_data_357(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 359,
+    "description": "class definition example (sample 358)",
+    "code": "class Model_358:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 360,
+    "description": "api request with requests (sample 359)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/359')\nprint(resp.json())"
+  },
+  {
+    "id": 361,
+    "description": "read file in python (sample 360)",
+    "code": "with open('file_360.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 362,
+    "description": "write to file in python (sample 361)",
+    "code": "with open('output_361.txt', 'w') as f:\n    f.write('data_361')"
+  },
+  {
+    "id": 363,
+    "description": "list comprehension example (sample 362)",
+    "code": "data = [x * 362 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 364,
+    "description": "dictionary comprehension (sample 363)",
+    "code": "mapping = {f'key_{j}': j * 363 for j in range(5)}"
+  },
+  {
+    "id": 365,
+    "description": "exception handling example (sample 364)",
+    "code": "try:\n    value = 100 / 364\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 366,
+    "description": "sort a list in python (sample 365)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=365 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 367,
+    "description": "string manipulation example (sample 366)",
+    "code": "text = 'python coding 366'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 368,
+    "description": "simple function definition (sample 367)",
+    "code": "def process_data_367(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 369,
+    "description": "class definition example (sample 368)",
+    "code": "class Model_368:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 370,
+    "description": "api request with requests (sample 369)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/369')\nprint(resp.json())"
+  },
+  {
+    "id": 371,
+    "description": "read file in python (sample 370)",
+    "code": "with open('file_370.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 372,
+    "description": "write to file in python (sample 371)",
+    "code": "with open('output_371.txt', 'w') as f:\n    f.write('data_371')"
+  },
+  {
+    "id": 373,
+    "description": "list comprehension example (sample 372)",
+    "code": "data = [x * 372 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 374,
+    "description": "dictionary comprehension (sample 373)",
+    "code": "mapping = {f'key_{j}': j * 373 for j in range(5)}"
+  },
+  {
+    "id": 375,
+    "description": "exception handling example (sample 374)",
+    "code": "try:\n    value = 100 / 374\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 376,
+    "description": "sort a list in python (sample 375)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=375 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 377,
+    "description": "string manipulation example (sample 376)",
+    "code": "text = 'python coding 376'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 378,
+    "description": "simple function definition (sample 377)",
+    "code": "def process_data_377(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 379,
+    "description": "class definition example (sample 378)",
+    "code": "class Model_378:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 380,
+    "description": "api request with requests (sample 379)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/379')\nprint(resp.json())"
+  },
+  {
+    "id": 381,
+    "description": "read file in python (sample 380)",
+    "code": "with open('file_380.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 382,
+    "description": "write to file in python (sample 381)",
+    "code": "with open('output_381.txt', 'w') as f:\n    f.write('data_381')"
+  },
+  {
+    "id": 383,
+    "description": "list comprehension example (sample 382)",
+    "code": "data = [x * 382 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 384,
+    "description": "dictionary comprehension (sample 383)",
+    "code": "mapping = {f'key_{j}': j * 383 for j in range(5)}"
+  },
+  {
+    "id": 385,
+    "description": "exception handling example (sample 384)",
+    "code": "try:\n    value = 100 / 384\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 386,
+    "description": "sort a list in python (sample 385)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=385 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 387,
+    "description": "string manipulation example (sample 386)",
+    "code": "text = 'python coding 386'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 388,
+    "description": "simple function definition (sample 387)",
+    "code": "def process_data_387(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 389,
+    "description": "class definition example (sample 388)",
+    "code": "class Model_388:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 390,
+    "description": "api request with requests (sample 389)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/389')\nprint(resp.json())"
+  },
+  {
+    "id": 391,
+    "description": "read file in python (sample 390)",
+    "code": "with open('file_390.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 392,
+    "description": "write to file in python (sample 391)",
+    "code": "with open('output_391.txt', 'w') as f:\n    f.write('data_391')"
+  },
+  {
+    "id": 393,
+    "description": "list comprehension example (sample 392)",
+    "code": "data = [x * 392 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 394,
+    "description": "dictionary comprehension (sample 393)",
+    "code": "mapping = {f'key_{j}': j * 393 for j in range(5)}"
+  },
+  {
+    "id": 395,
+    "description": "exception handling example (sample 394)",
+    "code": "try:\n    value = 100 / 394\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 396,
+    "description": "sort a list in python (sample 395)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=395 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 397,
+    "description": "string manipulation example (sample 396)",
+    "code": "text = 'python coding 396'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 398,
+    "description": "simple function definition (sample 397)",
+    "code": "def process_data_397(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 399,
+    "description": "class definition example (sample 398)",
+    "code": "class Model_398:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 400,
+    "description": "api request with requests (sample 399)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/399')\nprint(resp.json())"
+  },
+  {
+    "id": 401,
+    "description": "read file in python (sample 400)",
+    "code": "with open('file_400.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 402,
+    "description": "write to file in python (sample 401)",
+    "code": "with open('output_401.txt', 'w') as f:\n    f.write('data_401')"
+  },
+  {
+    "id": 403,
+    "description": "list comprehension example (sample 402)",
+    "code": "data = [x * 402 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 404,
+    "description": "dictionary comprehension (sample 403)",
+    "code": "mapping = {f'key_{j}': j * 403 for j in range(5)}"
+  },
+  {
+    "id": 405,
+    "description": "exception handling example (sample 404)",
+    "code": "try:\n    value = 100 / 404\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 406,
+    "description": "sort a list in python (sample 405)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=405 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 407,
+    "description": "string manipulation example (sample 406)",
+    "code": "text = 'python coding 406'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 408,
+    "description": "simple function definition (sample 407)",
+    "code": "def process_data_407(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 409,
+    "description": "class definition example (sample 408)",
+    "code": "class Model_408:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 410,
+    "description": "api request with requests (sample 409)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/409')\nprint(resp.json())"
+  },
+  {
+    "id": 411,
+    "description": "read file in python (sample 410)",
+    "code": "with open('file_410.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 412,
+    "description": "write to file in python (sample 411)",
+    "code": "with open('output_411.txt', 'w') as f:\n    f.write('data_411')"
+  },
+  {
+    "id": 413,
+    "description": "list comprehension example (sample 412)",
+    "code": "data = [x * 412 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 414,
+    "description": "dictionary comprehension (sample 413)",
+    "code": "mapping = {f'key_{j}': j * 413 for j in range(5)}"
+  },
+  {
+    "id": 415,
+    "description": "exception handling example (sample 414)",
+    "code": "try:\n    value = 100 / 414\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 416,
+    "description": "sort a list in python (sample 415)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=415 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 417,
+    "description": "string manipulation example (sample 416)",
+    "code": "text = 'python coding 416'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 418,
+    "description": "simple function definition (sample 417)",
+    "code": "def process_data_417(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 419,
+    "description": "class definition example (sample 418)",
+    "code": "class Model_418:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 420,
+    "description": "api request with requests (sample 419)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/419')\nprint(resp.json())"
+  },
+  {
+    "id": 421,
+    "description": "read file in python (sample 420)",
+    "code": "with open('file_420.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 422,
+    "description": "write to file in python (sample 421)",
+    "code": "with open('output_421.txt', 'w') as f:\n    f.write('data_421')"
+  },
+  {
+    "id": 423,
+    "description": "list comprehension example (sample 422)",
+    "code": "data = [x * 422 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 424,
+    "description": "dictionary comprehension (sample 423)",
+    "code": "mapping = {f'key_{j}': j * 423 for j in range(5)}"
+  },
+  {
+    "id": 425,
+    "description": "exception handling example (sample 424)",
+    "code": "try:\n    value = 100 / 424\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 426,
+    "description": "sort a list in python (sample 425)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=425 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 427,
+    "description": "string manipulation example (sample 426)",
+    "code": "text = 'python coding 426'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 428,
+    "description": "simple function definition (sample 427)",
+    "code": "def process_data_427(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 429,
+    "description": "class definition example (sample 428)",
+    "code": "class Model_428:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 430,
+    "description": "api request with requests (sample 429)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/429')\nprint(resp.json())"
+  },
+  {
+    "id": 431,
+    "description": "read file in python (sample 430)",
+    "code": "with open('file_430.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 432,
+    "description": "write to file in python (sample 431)",
+    "code": "with open('output_431.txt', 'w') as f:\n    f.write('data_431')"
+  },
+  {
+    "id": 433,
+    "description": "list comprehension example (sample 432)",
+    "code": "data = [x * 432 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 434,
+    "description": "dictionary comprehension (sample 433)",
+    "code": "mapping = {f'key_{j}': j * 433 for j in range(5)}"
+  },
+  {
+    "id": 435,
+    "description": "exception handling example (sample 434)",
+    "code": "try:\n    value = 100 / 434\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 436,
+    "description": "sort a list in python (sample 435)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=435 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 437,
+    "description": "string manipulation example (sample 436)",
+    "code": "text = 'python coding 436'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 438,
+    "description": "simple function definition (sample 437)",
+    "code": "def process_data_437(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 439,
+    "description": "class definition example (sample 438)",
+    "code": "class Model_438:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 440,
+    "description": "api request with requests (sample 439)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/439')\nprint(resp.json())"
+  },
+  {
+    "id": 441,
+    "description": "read file in python (sample 440)",
+    "code": "with open('file_440.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 442,
+    "description": "write to file in python (sample 441)",
+    "code": "with open('output_441.txt', 'w') as f:\n    f.write('data_441')"
+  },
+  {
+    "id": 443,
+    "description": "list comprehension example (sample 442)",
+    "code": "data = [x * 442 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 444,
+    "description": "dictionary comprehension (sample 443)",
+    "code": "mapping = {f'key_{j}': j * 443 for j in range(5)}"
+  },
+  {
+    "id": 445,
+    "description": "exception handling example (sample 444)",
+    "code": "try:\n    value = 100 / 444\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 446,
+    "description": "sort a list in python (sample 445)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=445 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 447,
+    "description": "string manipulation example (sample 446)",
+    "code": "text = 'python coding 446'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 448,
+    "description": "simple function definition (sample 447)",
+    "code": "def process_data_447(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 449,
+    "description": "class definition example (sample 448)",
+    "code": "class Model_448:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 450,
+    "description": "api request with requests (sample 449)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/449')\nprint(resp.json())"
+  },
+  {
+    "id": 451,
+    "description": "read file in python (sample 450)",
+    "code": "with open('file_450.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 452,
+    "description": "write to file in python (sample 451)",
+    "code": "with open('output_451.txt', 'w') as f:\n    f.write('data_451')"
+  },
+  {
+    "id": 453,
+    "description": "list comprehension example (sample 452)",
+    "code": "data = [x * 452 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 454,
+    "description": "dictionary comprehension (sample 453)",
+    "code": "mapping = {f'key_{j}': j * 453 for j in range(5)}"
+  },
+  {
+    "id": 455,
+    "description": "exception handling example (sample 454)",
+    "code": "try:\n    value = 100 / 454\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 456,
+    "description": "sort a list in python (sample 455)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=455 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 457,
+    "description": "string manipulation example (sample 456)",
+    "code": "text = 'python coding 456'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 458,
+    "description": "simple function definition (sample 457)",
+    "code": "def process_data_457(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 459,
+    "description": "class definition example (sample 458)",
+    "code": "class Model_458:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 460,
+    "description": "api request with requests (sample 459)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/459')\nprint(resp.json())"
+  },
+  {
+    "id": 461,
+    "description": "read file in python (sample 460)",
+    "code": "with open('file_460.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 462,
+    "description": "write to file in python (sample 461)",
+    "code": "with open('output_461.txt', 'w') as f:\n    f.write('data_461')"
+  },
+  {
+    "id": 463,
+    "description": "list comprehension example (sample 462)",
+    "code": "data = [x * 462 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 464,
+    "description": "dictionary comprehension (sample 463)",
+    "code": "mapping = {f'key_{j}': j * 463 for j in range(5)}"
+  },
+  {
+    "id": 465,
+    "description": "exception handling example (sample 464)",
+    "code": "try:\n    value = 100 / 464\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 466,
+    "description": "sort a list in python (sample 465)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=465 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 467,
+    "description": "string manipulation example (sample 466)",
+    "code": "text = 'python coding 466'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 468,
+    "description": "simple function definition (sample 467)",
+    "code": "def process_data_467(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 469,
+    "description": "class definition example (sample 468)",
+    "code": "class Model_468:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 470,
+    "description": "api request with requests (sample 469)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/469')\nprint(resp.json())"
+  },
+  {
+    "id": 471,
+    "description": "read file in python (sample 470)",
+    "code": "with open('file_470.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 472,
+    "description": "write to file in python (sample 471)",
+    "code": "with open('output_471.txt', 'w') as f:\n    f.write('data_471')"
+  },
+  {
+    "id": 473,
+    "description": "list comprehension example (sample 472)",
+    "code": "data = [x * 472 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 474,
+    "description": "dictionary comprehension (sample 473)",
+    "code": "mapping = {f'key_{j}': j * 473 for j in range(5)}"
+  },
+  {
+    "id": 475,
+    "description": "exception handling example (sample 474)",
+    "code": "try:\n    value = 100 / 474\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 476,
+    "description": "sort a list in python (sample 475)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=475 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 477,
+    "description": "string manipulation example (sample 476)",
+    "code": "text = 'python coding 476'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 478,
+    "description": "simple function definition (sample 477)",
+    "code": "def process_data_477(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 479,
+    "description": "class definition example (sample 478)",
+    "code": "class Model_478:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 480,
+    "description": "api request with requests (sample 479)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/479')\nprint(resp.json())"
+  },
+  {
+    "id": 481,
+    "description": "read file in python (sample 480)",
+    "code": "with open('file_480.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 482,
+    "description": "write to file in python (sample 481)",
+    "code": "with open('output_481.txt', 'w') as f:\n    f.write('data_481')"
+  },
+  {
+    "id": 483,
+    "description": "list comprehension example (sample 482)",
+    "code": "data = [x * 482 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 484,
+    "description": "dictionary comprehension (sample 483)",
+    "code": "mapping = {f'key_{j}': j * 483 for j in range(5)}"
+  },
+  {
+    "id": 485,
+    "description": "exception handling example (sample 484)",
+    "code": "try:\n    value = 100 / 484\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 486,
+    "description": "sort a list in python (sample 485)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=485 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 487,
+    "description": "string manipulation example (sample 486)",
+    "code": "text = 'python coding 486'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 488,
+    "description": "simple function definition (sample 487)",
+    "code": "def process_data_487(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 489,
+    "description": "class definition example (sample 488)",
+    "code": "class Model_488:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 490,
+    "description": "api request with requests (sample 489)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/489')\nprint(resp.json())"
+  },
+  {
+    "id": 491,
+    "description": "read file in python (sample 490)",
+    "code": "with open('file_490.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 492,
+    "description": "write to file in python (sample 491)",
+    "code": "with open('output_491.txt', 'w') as f:\n    f.write('data_491')"
+  },
+  {
+    "id": 493,
+    "description": "list comprehension example (sample 492)",
+    "code": "data = [x * 492 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 494,
+    "description": "dictionary comprehension (sample 493)",
+    "code": "mapping = {f'key_{j}': j * 493 for j in range(5)}"
+  },
+  {
+    "id": 495,
+    "description": "exception handling example (sample 494)",
+    "code": "try:\n    value = 100 / 494\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 496,
+    "description": "sort a list in python (sample 495)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=495 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 497,
+    "description": "string manipulation example (sample 496)",
+    "code": "text = 'python coding 496'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 498,
+    "description": "simple function definition (sample 497)",
+    "code": "def process_data_497(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 499,
+    "description": "class definition example (sample 498)",
+    "code": "class Model_498:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 500,
+    "description": "api request with requests (sample 499)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/499')\nprint(resp.json())"
+  },
+  {
+    "id": 501,
+    "description": "read file in python (sample 500)",
+    "code": "with open('file_500.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 502,
+    "description": "write to file in python (sample 501)",
+    "code": "with open('output_501.txt', 'w') as f:\n    f.write('data_501')"
+  },
+  {
+    "id": 503,
+    "description": "list comprehension example (sample 502)",
+    "code": "data = [x * 502 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 504,
+    "description": "dictionary comprehension (sample 503)",
+    "code": "mapping = {f'key_{j}': j * 503 for j in range(5)}"
+  },
+  {
+    "id": 505,
+    "description": "exception handling example (sample 504)",
+    "code": "try:\n    value = 100 / 504\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 506,
+    "description": "sort a list in python (sample 505)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=505 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 507,
+    "description": "string manipulation example (sample 506)",
+    "code": "text = 'python coding 506'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 508,
+    "description": "simple function definition (sample 507)",
+    "code": "def process_data_507(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 509,
+    "description": "class definition example (sample 508)",
+    "code": "class Model_508:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 510,
+    "description": "api request with requests (sample 509)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/509')\nprint(resp.json())"
+  },
+  {
+    "id": 511,
+    "description": "read file in python (sample 510)",
+    "code": "with open('file_510.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 512,
+    "description": "write to file in python (sample 511)",
+    "code": "with open('output_511.txt', 'w') as f:\n    f.write('data_511')"
+  },
+  {
+    "id": 513,
+    "description": "list comprehension example (sample 512)",
+    "code": "data = [x * 512 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 514,
+    "description": "dictionary comprehension (sample 513)",
+    "code": "mapping = {f'key_{j}': j * 513 for j in range(5)}"
+  },
+  {
+    "id": 515,
+    "description": "exception handling example (sample 514)",
+    "code": "try:\n    value = 100 / 514\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 516,
+    "description": "sort a list in python (sample 515)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=515 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 517,
+    "description": "string manipulation example (sample 516)",
+    "code": "text = 'python coding 516'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 518,
+    "description": "simple function definition (sample 517)",
+    "code": "def process_data_517(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 519,
+    "description": "class definition example (sample 518)",
+    "code": "class Model_518:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 520,
+    "description": "api request with requests (sample 519)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/519')\nprint(resp.json())"
+  },
+  {
+    "id": 521,
+    "description": "read file in python (sample 520)",
+    "code": "with open('file_520.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 522,
+    "description": "write to file in python (sample 521)",
+    "code": "with open('output_521.txt', 'w') as f:\n    f.write('data_521')"
+  },
+  {
+    "id": 523,
+    "description": "list comprehension example (sample 522)",
+    "code": "data = [x * 522 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 524,
+    "description": "dictionary comprehension (sample 523)",
+    "code": "mapping = {f'key_{j}': j * 523 for j in range(5)}"
+  },
+  {
+    "id": 525,
+    "description": "exception handling example (sample 524)",
+    "code": "try:\n    value = 100 / 524\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 526,
+    "description": "sort a list in python (sample 525)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=525 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 527,
+    "description": "string manipulation example (sample 526)",
+    "code": "text = 'python coding 526'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 528,
+    "description": "simple function definition (sample 527)",
+    "code": "def process_data_527(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 529,
+    "description": "class definition example (sample 528)",
+    "code": "class Model_528:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 530,
+    "description": "api request with requests (sample 529)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/529')\nprint(resp.json())"
+  },
+  {
+    "id": 531,
+    "description": "read file in python (sample 530)",
+    "code": "with open('file_530.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 532,
+    "description": "write to file in python (sample 531)",
+    "code": "with open('output_531.txt', 'w') as f:\n    f.write('data_531')"
+  },
+  {
+    "id": 533,
+    "description": "list comprehension example (sample 532)",
+    "code": "data = [x * 532 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 534,
+    "description": "dictionary comprehension (sample 533)",
+    "code": "mapping = {f'key_{j}': j * 533 for j in range(5)}"
+  },
+  {
+    "id": 535,
+    "description": "exception handling example (sample 534)",
+    "code": "try:\n    value = 100 / 534\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 536,
+    "description": "sort a list in python (sample 535)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=535 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 537,
+    "description": "string manipulation example (sample 536)",
+    "code": "text = 'python coding 536'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 538,
+    "description": "simple function definition (sample 537)",
+    "code": "def process_data_537(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 539,
+    "description": "class definition example (sample 538)",
+    "code": "class Model_538:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 540,
+    "description": "api request with requests (sample 539)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/539')\nprint(resp.json())"
+  },
+  {
+    "id": 541,
+    "description": "read file in python (sample 540)",
+    "code": "with open('file_540.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 542,
+    "description": "write to file in python (sample 541)",
+    "code": "with open('output_541.txt', 'w') as f:\n    f.write('data_541')"
+  },
+  {
+    "id": 543,
+    "description": "list comprehension example (sample 542)",
+    "code": "data = [x * 542 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 544,
+    "description": "dictionary comprehension (sample 543)",
+    "code": "mapping = {f'key_{j}': j * 543 for j in range(5)}"
+  },
+  {
+    "id": 545,
+    "description": "exception handling example (sample 544)",
+    "code": "try:\n    value = 100 / 544\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 546,
+    "description": "sort a list in python (sample 545)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=545 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 547,
+    "description": "string manipulation example (sample 546)",
+    "code": "text = 'python coding 546'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 548,
+    "description": "simple function definition (sample 547)",
+    "code": "def process_data_547(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 549,
+    "description": "class definition example (sample 548)",
+    "code": "class Model_548:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 550,
+    "description": "api request with requests (sample 549)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/549')\nprint(resp.json())"
+  },
+  {
+    "id": 551,
+    "description": "read file in python (sample 550)",
+    "code": "with open('file_550.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 552,
+    "description": "write to file in python (sample 551)",
+    "code": "with open('output_551.txt', 'w') as f:\n    f.write('data_551')"
+  },
+  {
+    "id": 553,
+    "description": "list comprehension example (sample 552)",
+    "code": "data = [x * 552 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 554,
+    "description": "dictionary comprehension (sample 553)",
+    "code": "mapping = {f'key_{j}': j * 553 for j in range(5)}"
+  },
+  {
+    "id": 555,
+    "description": "exception handling example (sample 554)",
+    "code": "try:\n    value = 100 / 554\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 556,
+    "description": "sort a list in python (sample 555)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=555 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 557,
+    "description": "string manipulation example (sample 556)",
+    "code": "text = 'python coding 556'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 558,
+    "description": "simple function definition (sample 557)",
+    "code": "def process_data_557(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 559,
+    "description": "class definition example (sample 558)",
+    "code": "class Model_558:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 560,
+    "description": "api request with requests (sample 559)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/559')\nprint(resp.json())"
+  },
+  {
+    "id": 561,
+    "description": "read file in python (sample 560)",
+    "code": "with open('file_560.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 562,
+    "description": "write to file in python (sample 561)",
+    "code": "with open('output_561.txt', 'w') as f:\n    f.write('data_561')"
+  },
+  {
+    "id": 563,
+    "description": "list comprehension example (sample 562)",
+    "code": "data = [x * 562 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 564,
+    "description": "dictionary comprehension (sample 563)",
+    "code": "mapping = {f'key_{j}': j * 563 for j in range(5)}"
+  },
+  {
+    "id": 565,
+    "description": "exception handling example (sample 564)",
+    "code": "try:\n    value = 100 / 564\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 566,
+    "description": "sort a list in python (sample 565)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=565 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 567,
+    "description": "string manipulation example (sample 566)",
+    "code": "text = 'python coding 566'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 568,
+    "description": "simple function definition (sample 567)",
+    "code": "def process_data_567(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 569,
+    "description": "class definition example (sample 568)",
+    "code": "class Model_568:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 570,
+    "description": "api request with requests (sample 569)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/569')\nprint(resp.json())"
+  },
+  {
+    "id": 571,
+    "description": "read file in python (sample 570)",
+    "code": "with open('file_570.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 572,
+    "description": "write to file in python (sample 571)",
+    "code": "with open('output_571.txt', 'w') as f:\n    f.write('data_571')"
+  },
+  {
+    "id": 573,
+    "description": "list comprehension example (sample 572)",
+    "code": "data = [x * 572 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 574,
+    "description": "dictionary comprehension (sample 573)",
+    "code": "mapping = {f'key_{j}': j * 573 for j in range(5)}"
+  },
+  {
+    "id": 575,
+    "description": "exception handling example (sample 574)",
+    "code": "try:\n    value = 100 / 574\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 576,
+    "description": "sort a list in python (sample 575)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=575 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 577,
+    "description": "string manipulation example (sample 576)",
+    "code": "text = 'python coding 576'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 578,
+    "description": "simple function definition (sample 577)",
+    "code": "def process_data_577(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 579,
+    "description": "class definition example (sample 578)",
+    "code": "class Model_578:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 580,
+    "description": "api request with requests (sample 579)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/579')\nprint(resp.json())"
+  },
+  {
+    "id": 581,
+    "description": "read file in python (sample 580)",
+    "code": "with open('file_580.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 582,
+    "description": "write to file in python (sample 581)",
+    "code": "with open('output_581.txt', 'w') as f:\n    f.write('data_581')"
+  },
+  {
+    "id": 583,
+    "description": "list comprehension example (sample 582)",
+    "code": "data = [x * 582 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 584,
+    "description": "dictionary comprehension (sample 583)",
+    "code": "mapping = {f'key_{j}': j * 583 for j in range(5)}"
+  },
+  {
+    "id": 585,
+    "description": "exception handling example (sample 584)",
+    "code": "try:\n    value = 100 / 584\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 586,
+    "description": "sort a list in python (sample 585)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=585 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 587,
+    "description": "string manipulation example (sample 586)",
+    "code": "text = 'python coding 586'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 588,
+    "description": "simple function definition (sample 587)",
+    "code": "def process_data_587(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 589,
+    "description": "class definition example (sample 588)",
+    "code": "class Model_588:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 590,
+    "description": "api request with requests (sample 589)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/589')\nprint(resp.json())"
+  },
+  {
+    "id": 591,
+    "description": "read file in python (sample 590)",
+    "code": "with open('file_590.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 592,
+    "description": "write to file in python (sample 591)",
+    "code": "with open('output_591.txt', 'w') as f:\n    f.write('data_591')"
+  },
+  {
+    "id": 593,
+    "description": "list comprehension example (sample 592)",
+    "code": "data = [x * 592 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 594,
+    "description": "dictionary comprehension (sample 593)",
+    "code": "mapping = {f'key_{j}': j * 593 for j in range(5)}"
+  },
+  {
+    "id": 595,
+    "description": "exception handling example (sample 594)",
+    "code": "try:\n    value = 100 / 594\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 596,
+    "description": "sort a list in python (sample 595)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=595 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 597,
+    "description": "string manipulation example (sample 596)",
+    "code": "text = 'python coding 596'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 598,
+    "description": "simple function definition (sample 597)",
+    "code": "def process_data_597(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 599,
+    "description": "class definition example (sample 598)",
+    "code": "class Model_598:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 600,
+    "description": "api request with requests (sample 599)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/599')\nprint(resp.json())"
+  },
+  {
+    "id": 601,
+    "description": "read file in python (sample 600)",
+    "code": "with open('file_600.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 602,
+    "description": "write to file in python (sample 601)",
+    "code": "with open('output_601.txt', 'w') as f:\n    f.write('data_601')"
+  },
+  {
+    "id": 603,
+    "description": "list comprehension example (sample 602)",
+    "code": "data = [x * 602 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 604,
+    "description": "dictionary comprehension (sample 603)",
+    "code": "mapping = {f'key_{j}': j * 603 for j in range(5)}"
+  },
+  {
+    "id": 605,
+    "description": "exception handling example (sample 604)",
+    "code": "try:\n    value = 100 / 604\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 606,
+    "description": "sort a list in python (sample 605)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=605 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 607,
+    "description": "string manipulation example (sample 606)",
+    "code": "text = 'python coding 606'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 608,
+    "description": "simple function definition (sample 607)",
+    "code": "def process_data_607(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 609,
+    "description": "class definition example (sample 608)",
+    "code": "class Model_608:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 610,
+    "description": "api request with requests (sample 609)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/609')\nprint(resp.json())"
+  },
+  {
+    "id": 611,
+    "description": "read file in python (sample 610)",
+    "code": "with open('file_610.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 612,
+    "description": "write to file in python (sample 611)",
+    "code": "with open('output_611.txt', 'w') as f:\n    f.write('data_611')"
+  },
+  {
+    "id": 613,
+    "description": "list comprehension example (sample 612)",
+    "code": "data = [x * 612 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 614,
+    "description": "dictionary comprehension (sample 613)",
+    "code": "mapping = {f'key_{j}': j * 613 for j in range(5)}"
+  },
+  {
+    "id": 615,
+    "description": "exception handling example (sample 614)",
+    "code": "try:\n    value = 100 / 614\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 616,
+    "description": "sort a list in python (sample 615)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=615 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 617,
+    "description": "string manipulation example (sample 616)",
+    "code": "text = 'python coding 616'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 618,
+    "description": "simple function definition (sample 617)",
+    "code": "def process_data_617(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 619,
+    "description": "class definition example (sample 618)",
+    "code": "class Model_618:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 620,
+    "description": "api request with requests (sample 619)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/619')\nprint(resp.json())"
+  },
+  {
+    "id": 621,
+    "description": "read file in python (sample 620)",
+    "code": "with open('file_620.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 622,
+    "description": "write to file in python (sample 621)",
+    "code": "with open('output_621.txt', 'w') as f:\n    f.write('data_621')"
+  },
+  {
+    "id": 623,
+    "description": "list comprehension example (sample 622)",
+    "code": "data = [x * 622 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 624,
+    "description": "dictionary comprehension (sample 623)",
+    "code": "mapping = {f'key_{j}': j * 623 for j in range(5)}"
+  },
+  {
+    "id": 625,
+    "description": "exception handling example (sample 624)",
+    "code": "try:\n    value = 100 / 624\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 626,
+    "description": "sort a list in python (sample 625)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=625 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 627,
+    "description": "string manipulation example (sample 626)",
+    "code": "text = 'python coding 626'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 628,
+    "description": "simple function definition (sample 627)",
+    "code": "def process_data_627(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 629,
+    "description": "class definition example (sample 628)",
+    "code": "class Model_628:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 630,
+    "description": "api request with requests (sample 629)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/629')\nprint(resp.json())"
+  },
+  {
+    "id": 631,
+    "description": "read file in python (sample 630)",
+    "code": "with open('file_630.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 632,
+    "description": "write to file in python (sample 631)",
+    "code": "with open('output_631.txt', 'w') as f:\n    f.write('data_631')"
+  },
+  {
+    "id": 633,
+    "description": "list comprehension example (sample 632)",
+    "code": "data = [x * 632 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 634,
+    "description": "dictionary comprehension (sample 633)",
+    "code": "mapping = {f'key_{j}': j * 633 for j in range(5)}"
+  },
+  {
+    "id": 635,
+    "description": "exception handling example (sample 634)",
+    "code": "try:\n    value = 100 / 634\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 636,
+    "description": "sort a list in python (sample 635)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=635 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 637,
+    "description": "string manipulation example (sample 636)",
+    "code": "text = 'python coding 636'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 638,
+    "description": "simple function definition (sample 637)",
+    "code": "def process_data_637(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 639,
+    "description": "class definition example (sample 638)",
+    "code": "class Model_638:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 640,
+    "description": "api request with requests (sample 639)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/639')\nprint(resp.json())"
+  },
+  {
+    "id": 641,
+    "description": "read file in python (sample 640)",
+    "code": "with open('file_640.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 642,
+    "description": "write to file in python (sample 641)",
+    "code": "with open('output_641.txt', 'w') as f:\n    f.write('data_641')"
+  },
+  {
+    "id": 643,
+    "description": "list comprehension example (sample 642)",
+    "code": "data = [x * 642 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 644,
+    "description": "dictionary comprehension (sample 643)",
+    "code": "mapping = {f'key_{j}': j * 643 for j in range(5)}"
+  },
+  {
+    "id": 645,
+    "description": "exception handling example (sample 644)",
+    "code": "try:\n    value = 100 / 644\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 646,
+    "description": "sort a list in python (sample 645)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=645 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 647,
+    "description": "string manipulation example (sample 646)",
+    "code": "text = 'python coding 646'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 648,
+    "description": "simple function definition (sample 647)",
+    "code": "def process_data_647(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 649,
+    "description": "class definition example (sample 648)",
+    "code": "class Model_648:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 650,
+    "description": "api request with requests (sample 649)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/649')\nprint(resp.json())"
+  },
+  {
+    "id": 651,
+    "description": "read file in python (sample 650)",
+    "code": "with open('file_650.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 652,
+    "description": "write to file in python (sample 651)",
+    "code": "with open('output_651.txt', 'w') as f:\n    f.write('data_651')"
+  },
+  {
+    "id": 653,
+    "description": "list comprehension example (sample 652)",
+    "code": "data = [x * 652 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 654,
+    "description": "dictionary comprehension (sample 653)",
+    "code": "mapping = {f'key_{j}': j * 653 for j in range(5)}"
+  },
+  {
+    "id": 655,
+    "description": "exception handling example (sample 654)",
+    "code": "try:\n    value = 100 / 654\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 656,
+    "description": "sort a list in python (sample 655)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=655 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 657,
+    "description": "string manipulation example (sample 656)",
+    "code": "text = 'python coding 656'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 658,
+    "description": "simple function definition (sample 657)",
+    "code": "def process_data_657(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 659,
+    "description": "class definition example (sample 658)",
+    "code": "class Model_658:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 660,
+    "description": "api request with requests (sample 659)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/659')\nprint(resp.json())"
+  },
+  {
+    "id": 661,
+    "description": "read file in python (sample 660)",
+    "code": "with open('file_660.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 662,
+    "description": "write to file in python (sample 661)",
+    "code": "with open('output_661.txt', 'w') as f:\n    f.write('data_661')"
+  },
+  {
+    "id": 663,
+    "description": "list comprehension example (sample 662)",
+    "code": "data = [x * 662 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 664,
+    "description": "dictionary comprehension (sample 663)",
+    "code": "mapping = {f'key_{j}': j * 663 for j in range(5)}"
+  },
+  {
+    "id": 665,
+    "description": "exception handling example (sample 664)",
+    "code": "try:\n    value = 100 / 664\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 666,
+    "description": "sort a list in python (sample 665)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=665 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 667,
+    "description": "string manipulation example (sample 666)",
+    "code": "text = 'python coding 666'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 668,
+    "description": "simple function definition (sample 667)",
+    "code": "def process_data_667(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 669,
+    "description": "class definition example (sample 668)",
+    "code": "class Model_668:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 670,
+    "description": "api request with requests (sample 669)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/669')\nprint(resp.json())"
+  },
+  {
+    "id": 671,
+    "description": "read file in python (sample 670)",
+    "code": "with open('file_670.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 672,
+    "description": "write to file in python (sample 671)",
+    "code": "with open('output_671.txt', 'w') as f:\n    f.write('data_671')"
+  },
+  {
+    "id": 673,
+    "description": "list comprehension example (sample 672)",
+    "code": "data = [x * 672 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 674,
+    "description": "dictionary comprehension (sample 673)",
+    "code": "mapping = {f'key_{j}': j * 673 for j in range(5)}"
+  },
+  {
+    "id": 675,
+    "description": "exception handling example (sample 674)",
+    "code": "try:\n    value = 100 / 674\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 676,
+    "description": "sort a list in python (sample 675)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=675 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 677,
+    "description": "string manipulation example (sample 676)",
+    "code": "text = 'python coding 676'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 678,
+    "description": "simple function definition (sample 677)",
+    "code": "def process_data_677(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 679,
+    "description": "class definition example (sample 678)",
+    "code": "class Model_678:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 680,
+    "description": "api request with requests (sample 679)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/679')\nprint(resp.json())"
+  },
+  {
+    "id": 681,
+    "description": "read file in python (sample 680)",
+    "code": "with open('file_680.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 682,
+    "description": "write to file in python (sample 681)",
+    "code": "with open('output_681.txt', 'w') as f:\n    f.write('data_681')"
+  },
+  {
+    "id": 683,
+    "description": "list comprehension example (sample 682)",
+    "code": "data = [x * 682 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 684,
+    "description": "dictionary comprehension (sample 683)",
+    "code": "mapping = {f'key_{j}': j * 683 for j in range(5)}"
+  },
+  {
+    "id": 685,
+    "description": "exception handling example (sample 684)",
+    "code": "try:\n    value = 100 / 684\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 686,
+    "description": "sort a list in python (sample 685)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=685 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 687,
+    "description": "string manipulation example (sample 686)",
+    "code": "text = 'python coding 686'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 688,
+    "description": "simple function definition (sample 687)",
+    "code": "def process_data_687(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 689,
+    "description": "class definition example (sample 688)",
+    "code": "class Model_688:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 690,
+    "description": "api request with requests (sample 689)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/689')\nprint(resp.json())"
+  },
+  {
+    "id": 691,
+    "description": "read file in python (sample 690)",
+    "code": "with open('file_690.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 692,
+    "description": "write to file in python (sample 691)",
+    "code": "with open('output_691.txt', 'w') as f:\n    f.write('data_691')"
+  },
+  {
+    "id": 693,
+    "description": "list comprehension example (sample 692)",
+    "code": "data = [x * 692 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 694,
+    "description": "dictionary comprehension (sample 693)",
+    "code": "mapping = {f'key_{j}': j * 693 for j in range(5)}"
+  },
+  {
+    "id": 695,
+    "description": "exception handling example (sample 694)",
+    "code": "try:\n    value = 100 / 694\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 696,
+    "description": "sort a list in python (sample 695)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=695 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 697,
+    "description": "string manipulation example (sample 696)",
+    "code": "text = 'python coding 696'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 698,
+    "description": "simple function definition (sample 697)",
+    "code": "def process_data_697(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 699,
+    "description": "class definition example (sample 698)",
+    "code": "class Model_698:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 700,
+    "description": "api request with requests (sample 699)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/699')\nprint(resp.json())"
+  },
+  {
+    "id": 701,
+    "description": "read file in python (sample 700)",
+    "code": "with open('file_700.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 702,
+    "description": "write to file in python (sample 701)",
+    "code": "with open('output_701.txt', 'w') as f:\n    f.write('data_701')"
+  },
+  {
+    "id": 703,
+    "description": "list comprehension example (sample 702)",
+    "code": "data = [x * 702 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 704,
+    "description": "dictionary comprehension (sample 703)",
+    "code": "mapping = {f'key_{j}': j * 703 for j in range(5)}"
+  },
+  {
+    "id": 705,
+    "description": "exception handling example (sample 704)",
+    "code": "try:\n    value = 100 / 704\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 706,
+    "description": "sort a list in python (sample 705)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=705 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 707,
+    "description": "string manipulation example (sample 706)",
+    "code": "text = 'python coding 706'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 708,
+    "description": "simple function definition (sample 707)",
+    "code": "def process_data_707(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 709,
+    "description": "class definition example (sample 708)",
+    "code": "class Model_708:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 710,
+    "description": "api request with requests (sample 709)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/709')\nprint(resp.json())"
+  },
+  {
+    "id": 711,
+    "description": "read file in python (sample 710)",
+    "code": "with open('file_710.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 712,
+    "description": "write to file in python (sample 711)",
+    "code": "with open('output_711.txt', 'w') as f:\n    f.write('data_711')"
+  },
+  {
+    "id": 713,
+    "description": "list comprehension example (sample 712)",
+    "code": "data = [x * 712 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 714,
+    "description": "dictionary comprehension (sample 713)",
+    "code": "mapping = {f'key_{j}': j * 713 for j in range(5)}"
+  },
+  {
+    "id": 715,
+    "description": "exception handling example (sample 714)",
+    "code": "try:\n    value = 100 / 714\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 716,
+    "description": "sort a list in python (sample 715)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=715 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 717,
+    "description": "string manipulation example (sample 716)",
+    "code": "text = 'python coding 716'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 718,
+    "description": "simple function definition (sample 717)",
+    "code": "def process_data_717(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 719,
+    "description": "class definition example (sample 718)",
+    "code": "class Model_718:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 720,
+    "description": "api request with requests (sample 719)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/719')\nprint(resp.json())"
+  },
+  {
+    "id": 721,
+    "description": "read file in python (sample 720)",
+    "code": "with open('file_720.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 722,
+    "description": "write to file in python (sample 721)",
+    "code": "with open('output_721.txt', 'w') as f:\n    f.write('data_721')"
+  },
+  {
+    "id": 723,
+    "description": "list comprehension example (sample 722)",
+    "code": "data = [x * 722 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 724,
+    "description": "dictionary comprehension (sample 723)",
+    "code": "mapping = {f'key_{j}': j * 723 for j in range(5)}"
+  },
+  {
+    "id": 725,
+    "description": "exception handling example (sample 724)",
+    "code": "try:\n    value = 100 / 724\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 726,
+    "description": "sort a list in python (sample 725)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=725 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 727,
+    "description": "string manipulation example (sample 726)",
+    "code": "text = 'python coding 726'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 728,
+    "description": "simple function definition (sample 727)",
+    "code": "def process_data_727(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 729,
+    "description": "class definition example (sample 728)",
+    "code": "class Model_728:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 730,
+    "description": "api request with requests (sample 729)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/729')\nprint(resp.json())"
+  },
+  {
+    "id": 731,
+    "description": "read file in python (sample 730)",
+    "code": "with open('file_730.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 732,
+    "description": "write to file in python (sample 731)",
+    "code": "with open('output_731.txt', 'w') as f:\n    f.write('data_731')"
+  },
+  {
+    "id": 733,
+    "description": "list comprehension example (sample 732)",
+    "code": "data = [x * 732 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 734,
+    "description": "dictionary comprehension (sample 733)",
+    "code": "mapping = {f'key_{j}': j * 733 for j in range(5)}"
+  },
+  {
+    "id": 735,
+    "description": "exception handling example (sample 734)",
+    "code": "try:\n    value = 100 / 734\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 736,
+    "description": "sort a list in python (sample 735)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=735 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 737,
+    "description": "string manipulation example (sample 736)",
+    "code": "text = 'python coding 736'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 738,
+    "description": "simple function definition (sample 737)",
+    "code": "def process_data_737(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 739,
+    "description": "class definition example (sample 738)",
+    "code": "class Model_738:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 740,
+    "description": "api request with requests (sample 739)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/739')\nprint(resp.json())"
+  },
+  {
+    "id": 741,
+    "description": "read file in python (sample 740)",
+    "code": "with open('file_740.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 742,
+    "description": "write to file in python (sample 741)",
+    "code": "with open('output_741.txt', 'w') as f:\n    f.write('data_741')"
+  },
+  {
+    "id": 743,
+    "description": "list comprehension example (sample 742)",
+    "code": "data = [x * 742 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 744,
+    "description": "dictionary comprehension (sample 743)",
+    "code": "mapping = {f'key_{j}': j * 743 for j in range(5)}"
+  },
+  {
+    "id": 745,
+    "description": "exception handling example (sample 744)",
+    "code": "try:\n    value = 100 / 744\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 746,
+    "description": "sort a list in python (sample 745)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=745 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 747,
+    "description": "string manipulation example (sample 746)",
+    "code": "text = 'python coding 746'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 748,
+    "description": "simple function definition (sample 747)",
+    "code": "def process_data_747(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 749,
+    "description": "class definition example (sample 748)",
+    "code": "class Model_748:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 750,
+    "description": "api request with requests (sample 749)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/749')\nprint(resp.json())"
+  },
+  {
+    "id": 751,
+    "description": "read file in python (sample 750)",
+    "code": "with open('file_750.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 752,
+    "description": "write to file in python (sample 751)",
+    "code": "with open('output_751.txt', 'w') as f:\n    f.write('data_751')"
+  },
+  {
+    "id": 753,
+    "description": "list comprehension example (sample 752)",
+    "code": "data = [x * 752 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 754,
+    "description": "dictionary comprehension (sample 753)",
+    "code": "mapping = {f'key_{j}': j * 753 for j in range(5)}"
+  },
+  {
+    "id": 755,
+    "description": "exception handling example (sample 754)",
+    "code": "try:\n    value = 100 / 754\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 756,
+    "description": "sort a list in python (sample 755)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=755 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 757,
+    "description": "string manipulation example (sample 756)",
+    "code": "text = 'python coding 756'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 758,
+    "description": "simple function definition (sample 757)",
+    "code": "def process_data_757(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 759,
+    "description": "class definition example (sample 758)",
+    "code": "class Model_758:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 760,
+    "description": "api request with requests (sample 759)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/759')\nprint(resp.json())"
+  },
+  {
+    "id": 761,
+    "description": "read file in python (sample 760)",
+    "code": "with open('file_760.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 762,
+    "description": "write to file in python (sample 761)",
+    "code": "with open('output_761.txt', 'w') as f:\n    f.write('data_761')"
+  },
+  {
+    "id": 763,
+    "description": "list comprehension example (sample 762)",
+    "code": "data = [x * 762 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 764,
+    "description": "dictionary comprehension (sample 763)",
+    "code": "mapping = {f'key_{j}': j * 763 for j in range(5)}"
+  },
+  {
+    "id": 765,
+    "description": "exception handling example (sample 764)",
+    "code": "try:\n    value = 100 / 764\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 766,
+    "description": "sort a list in python (sample 765)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=765 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 767,
+    "description": "string manipulation example (sample 766)",
+    "code": "text = 'python coding 766'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 768,
+    "description": "simple function definition (sample 767)",
+    "code": "def process_data_767(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 769,
+    "description": "class definition example (sample 768)",
+    "code": "class Model_768:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 770,
+    "description": "api request with requests (sample 769)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/769')\nprint(resp.json())"
+  },
+  {
+    "id": 771,
+    "description": "read file in python (sample 770)",
+    "code": "with open('file_770.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 772,
+    "description": "write to file in python (sample 771)",
+    "code": "with open('output_771.txt', 'w') as f:\n    f.write('data_771')"
+  },
+  {
+    "id": 773,
+    "description": "list comprehension example (sample 772)",
+    "code": "data = [x * 772 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 774,
+    "description": "dictionary comprehension (sample 773)",
+    "code": "mapping = {f'key_{j}': j * 773 for j in range(5)}"
+  },
+  {
+    "id": 775,
+    "description": "exception handling example (sample 774)",
+    "code": "try:\n    value = 100 / 774\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 776,
+    "description": "sort a list in python (sample 775)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=775 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 777,
+    "description": "string manipulation example (sample 776)",
+    "code": "text = 'python coding 776'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 778,
+    "description": "simple function definition (sample 777)",
+    "code": "def process_data_777(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 779,
+    "description": "class definition example (sample 778)",
+    "code": "class Model_778:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 780,
+    "description": "api request with requests (sample 779)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/779')\nprint(resp.json())"
+  },
+  {
+    "id": 781,
+    "description": "read file in python (sample 780)",
+    "code": "with open('file_780.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 782,
+    "description": "write to file in python (sample 781)",
+    "code": "with open('output_781.txt', 'w') as f:\n    f.write('data_781')"
+  },
+  {
+    "id": 783,
+    "description": "list comprehension example (sample 782)",
+    "code": "data = [x * 782 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 784,
+    "description": "dictionary comprehension (sample 783)",
+    "code": "mapping = {f'key_{j}': j * 783 for j in range(5)}"
+  },
+  {
+    "id": 785,
+    "description": "exception handling example (sample 784)",
+    "code": "try:\n    value = 100 / 784\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 786,
+    "description": "sort a list in python (sample 785)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=785 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 787,
+    "description": "string manipulation example (sample 786)",
+    "code": "text = 'python coding 786'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 788,
+    "description": "simple function definition (sample 787)",
+    "code": "def process_data_787(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 789,
+    "description": "class definition example (sample 788)",
+    "code": "class Model_788:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 790,
+    "description": "api request with requests (sample 789)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/789')\nprint(resp.json())"
+  },
+  {
+    "id": 791,
+    "description": "read file in python (sample 790)",
+    "code": "with open('file_790.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 792,
+    "description": "write to file in python (sample 791)",
+    "code": "with open('output_791.txt', 'w') as f:\n    f.write('data_791')"
+  },
+  {
+    "id": 793,
+    "description": "list comprehension example (sample 792)",
+    "code": "data = [x * 792 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 794,
+    "description": "dictionary comprehension (sample 793)",
+    "code": "mapping = {f'key_{j}': j * 793 for j in range(5)}"
+  },
+  {
+    "id": 795,
+    "description": "exception handling example (sample 794)",
+    "code": "try:\n    value = 100 / 794\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 796,
+    "description": "sort a list in python (sample 795)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=795 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 797,
+    "description": "string manipulation example (sample 796)",
+    "code": "text = 'python coding 796'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 798,
+    "description": "simple function definition (sample 797)",
+    "code": "def process_data_797(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 799,
+    "description": "class definition example (sample 798)",
+    "code": "class Model_798:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 800,
+    "description": "api request with requests (sample 799)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/799')\nprint(resp.json())"
+  },
+  {
+    "id": 801,
+    "description": "read file in python (sample 800)",
+    "code": "with open('file_800.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 802,
+    "description": "write to file in python (sample 801)",
+    "code": "with open('output_801.txt', 'w') as f:\n    f.write('data_801')"
+  },
+  {
+    "id": 803,
+    "description": "list comprehension example (sample 802)",
+    "code": "data = [x * 802 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 804,
+    "description": "dictionary comprehension (sample 803)",
+    "code": "mapping = {f'key_{j}': j * 803 for j in range(5)}"
+  },
+  {
+    "id": 805,
+    "description": "exception handling example (sample 804)",
+    "code": "try:\n    value = 100 / 804\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 806,
+    "description": "sort a list in python (sample 805)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=805 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 807,
+    "description": "string manipulation example (sample 806)",
+    "code": "text = 'python coding 806'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 808,
+    "description": "simple function definition (sample 807)",
+    "code": "def process_data_807(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 809,
+    "description": "class definition example (sample 808)",
+    "code": "class Model_808:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 810,
+    "description": "api request with requests (sample 809)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/809')\nprint(resp.json())"
+  },
+  {
+    "id": 811,
+    "description": "read file in python (sample 810)",
+    "code": "with open('file_810.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 812,
+    "description": "write to file in python (sample 811)",
+    "code": "with open('output_811.txt', 'w') as f:\n    f.write('data_811')"
+  },
+  {
+    "id": 813,
+    "description": "list comprehension example (sample 812)",
+    "code": "data = [x * 812 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 814,
+    "description": "dictionary comprehension (sample 813)",
+    "code": "mapping = {f'key_{j}': j * 813 for j in range(5)}"
+  },
+  {
+    "id": 815,
+    "description": "exception handling example (sample 814)",
+    "code": "try:\n    value = 100 / 814\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 816,
+    "description": "sort a list in python (sample 815)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=815 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 817,
+    "description": "string manipulation example (sample 816)",
+    "code": "text = 'python coding 816'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 818,
+    "description": "simple function definition (sample 817)",
+    "code": "def process_data_817(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 819,
+    "description": "class definition example (sample 818)",
+    "code": "class Model_818:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 820,
+    "description": "api request with requests (sample 819)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/819')\nprint(resp.json())"
+  },
+  {
+    "id": 821,
+    "description": "read file in python (sample 820)",
+    "code": "with open('file_820.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 822,
+    "description": "write to file in python (sample 821)",
+    "code": "with open('output_821.txt', 'w') as f:\n    f.write('data_821')"
+  },
+  {
+    "id": 823,
+    "description": "list comprehension example (sample 822)",
+    "code": "data = [x * 822 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 824,
+    "description": "dictionary comprehension (sample 823)",
+    "code": "mapping = {f'key_{j}': j * 823 for j in range(5)}"
+  },
+  {
+    "id": 825,
+    "description": "exception handling example (sample 824)",
+    "code": "try:\n    value = 100 / 824\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 826,
+    "description": "sort a list in python (sample 825)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=825 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 827,
+    "description": "string manipulation example (sample 826)",
+    "code": "text = 'python coding 826'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 828,
+    "description": "simple function definition (sample 827)",
+    "code": "def process_data_827(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 829,
+    "description": "class definition example (sample 828)",
+    "code": "class Model_828:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 830,
+    "description": "api request with requests (sample 829)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/829')\nprint(resp.json())"
+  },
+  {
+    "id": 831,
+    "description": "read file in python (sample 830)",
+    "code": "with open('file_830.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 832,
+    "description": "write to file in python (sample 831)",
+    "code": "with open('output_831.txt', 'w') as f:\n    f.write('data_831')"
+  },
+  {
+    "id": 833,
+    "description": "list comprehension example (sample 832)",
+    "code": "data = [x * 832 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 834,
+    "description": "dictionary comprehension (sample 833)",
+    "code": "mapping = {f'key_{j}': j * 833 for j in range(5)}"
+  },
+  {
+    "id": 835,
+    "description": "exception handling example (sample 834)",
+    "code": "try:\n    value = 100 / 834\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 836,
+    "description": "sort a list in python (sample 835)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=835 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 837,
+    "description": "string manipulation example (sample 836)",
+    "code": "text = 'python coding 836'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 838,
+    "description": "simple function definition (sample 837)",
+    "code": "def process_data_837(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 839,
+    "description": "class definition example (sample 838)",
+    "code": "class Model_838:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 840,
+    "description": "api request with requests (sample 839)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/839')\nprint(resp.json())"
+  },
+  {
+    "id": 841,
+    "description": "read file in python (sample 840)",
+    "code": "with open('file_840.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 842,
+    "description": "write to file in python (sample 841)",
+    "code": "with open('output_841.txt', 'w') as f:\n    f.write('data_841')"
+  },
+  {
+    "id": 843,
+    "description": "list comprehension example (sample 842)",
+    "code": "data = [x * 842 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 844,
+    "description": "dictionary comprehension (sample 843)",
+    "code": "mapping = {f'key_{j}': j * 843 for j in range(5)}"
+  },
+  {
+    "id": 845,
+    "description": "exception handling example (sample 844)",
+    "code": "try:\n    value = 100 / 844\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 846,
+    "description": "sort a list in python (sample 845)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=845 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 847,
+    "description": "string manipulation example (sample 846)",
+    "code": "text = 'python coding 846'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 848,
+    "description": "simple function definition (sample 847)",
+    "code": "def process_data_847(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 849,
+    "description": "class definition example (sample 848)",
+    "code": "class Model_848:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 850,
+    "description": "api request with requests (sample 849)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/849')\nprint(resp.json())"
+  },
+  {
+    "id": 851,
+    "description": "read file in python (sample 850)",
+    "code": "with open('file_850.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 852,
+    "description": "write to file in python (sample 851)",
+    "code": "with open('output_851.txt', 'w') as f:\n    f.write('data_851')"
+  },
+  {
+    "id": 853,
+    "description": "list comprehension example (sample 852)",
+    "code": "data = [x * 852 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 854,
+    "description": "dictionary comprehension (sample 853)",
+    "code": "mapping = {f'key_{j}': j * 853 for j in range(5)}"
+  },
+  {
+    "id": 855,
+    "description": "exception handling example (sample 854)",
+    "code": "try:\n    value = 100 / 854\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 856,
+    "description": "sort a list in python (sample 855)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=855 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 857,
+    "description": "string manipulation example (sample 856)",
+    "code": "text = 'python coding 856'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 858,
+    "description": "simple function definition (sample 857)",
+    "code": "def process_data_857(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 859,
+    "description": "class definition example (sample 858)",
+    "code": "class Model_858:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 860,
+    "description": "api request with requests (sample 859)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/859')\nprint(resp.json())"
+  },
+  {
+    "id": 861,
+    "description": "read file in python (sample 860)",
+    "code": "with open('file_860.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 862,
+    "description": "write to file in python (sample 861)",
+    "code": "with open('output_861.txt', 'w') as f:\n    f.write('data_861')"
+  },
+  {
+    "id": 863,
+    "description": "list comprehension example (sample 862)",
+    "code": "data = [x * 862 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 864,
+    "description": "dictionary comprehension (sample 863)",
+    "code": "mapping = {f'key_{j}': j * 863 for j in range(5)}"
+  },
+  {
+    "id": 865,
+    "description": "exception handling example (sample 864)",
+    "code": "try:\n    value = 100 / 864\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 866,
+    "description": "sort a list in python (sample 865)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=865 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 867,
+    "description": "string manipulation example (sample 866)",
+    "code": "text = 'python coding 866'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 868,
+    "description": "simple function definition (sample 867)",
+    "code": "def process_data_867(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 869,
+    "description": "class definition example (sample 868)",
+    "code": "class Model_868:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 870,
+    "description": "api request with requests (sample 869)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/869')\nprint(resp.json())"
+  },
+  {
+    "id": 871,
+    "description": "read file in python (sample 870)",
+    "code": "with open('file_870.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 872,
+    "description": "write to file in python (sample 871)",
+    "code": "with open('output_871.txt', 'w') as f:\n    f.write('data_871')"
+  },
+  {
+    "id": 873,
+    "description": "list comprehension example (sample 872)",
+    "code": "data = [x * 872 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 874,
+    "description": "dictionary comprehension (sample 873)",
+    "code": "mapping = {f'key_{j}': j * 873 for j in range(5)}"
+  },
+  {
+    "id": 875,
+    "description": "exception handling example (sample 874)",
+    "code": "try:\n    value = 100 / 874\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 876,
+    "description": "sort a list in python (sample 875)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=875 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 877,
+    "description": "string manipulation example (sample 876)",
+    "code": "text = 'python coding 876'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 878,
+    "description": "simple function definition (sample 877)",
+    "code": "def process_data_877(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 879,
+    "description": "class definition example (sample 878)",
+    "code": "class Model_878:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 880,
+    "description": "api request with requests (sample 879)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/879')\nprint(resp.json())"
+  },
+  {
+    "id": 881,
+    "description": "read file in python (sample 880)",
+    "code": "with open('file_880.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 882,
+    "description": "write to file in python (sample 881)",
+    "code": "with open('output_881.txt', 'w') as f:\n    f.write('data_881')"
+  },
+  {
+    "id": 883,
+    "description": "list comprehension example (sample 882)",
+    "code": "data = [x * 882 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 884,
+    "description": "dictionary comprehension (sample 883)",
+    "code": "mapping = {f'key_{j}': j * 883 for j in range(5)}"
+  },
+  {
+    "id": 885,
+    "description": "exception handling example (sample 884)",
+    "code": "try:\n    value = 100 / 884\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 886,
+    "description": "sort a list in python (sample 885)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=885 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 887,
+    "description": "string manipulation example (sample 886)",
+    "code": "text = 'python coding 886'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 888,
+    "description": "simple function definition (sample 887)",
+    "code": "def process_data_887(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 889,
+    "description": "class definition example (sample 888)",
+    "code": "class Model_888:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 890,
+    "description": "api request with requests (sample 889)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/889')\nprint(resp.json())"
+  },
+  {
+    "id": 891,
+    "description": "read file in python (sample 890)",
+    "code": "with open('file_890.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 892,
+    "description": "write to file in python (sample 891)",
+    "code": "with open('output_891.txt', 'w') as f:\n    f.write('data_891')"
+  },
+  {
+    "id": 893,
+    "description": "list comprehension example (sample 892)",
+    "code": "data = [x * 892 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 894,
+    "description": "dictionary comprehension (sample 893)",
+    "code": "mapping = {f'key_{j}': j * 893 for j in range(5)}"
+  },
+  {
+    "id": 895,
+    "description": "exception handling example (sample 894)",
+    "code": "try:\n    value = 100 / 894\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 896,
+    "description": "sort a list in python (sample 895)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=895 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 897,
+    "description": "string manipulation example (sample 896)",
+    "code": "text = 'python coding 896'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 898,
+    "description": "simple function definition (sample 897)",
+    "code": "def process_data_897(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 899,
+    "description": "class definition example (sample 898)",
+    "code": "class Model_898:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 900,
+    "description": "api request with requests (sample 899)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/899')\nprint(resp.json())"
+  },
+  {
+    "id": 901,
+    "description": "read file in python (sample 900)",
+    "code": "with open('file_900.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 902,
+    "description": "write to file in python (sample 901)",
+    "code": "with open('output_901.txt', 'w') as f:\n    f.write('data_901')"
+  },
+  {
+    "id": 903,
+    "description": "list comprehension example (sample 902)",
+    "code": "data = [x * 902 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 904,
+    "description": "dictionary comprehension (sample 903)",
+    "code": "mapping = {f'key_{j}': j * 903 for j in range(5)}"
+  },
+  {
+    "id": 905,
+    "description": "exception handling example (sample 904)",
+    "code": "try:\n    value = 100 / 904\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 906,
+    "description": "sort a list in python (sample 905)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=905 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 907,
+    "description": "string manipulation example (sample 906)",
+    "code": "text = 'python coding 906'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 908,
+    "description": "simple function definition (sample 907)",
+    "code": "def process_data_907(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 909,
+    "description": "class definition example (sample 908)",
+    "code": "class Model_908:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 910,
+    "description": "api request with requests (sample 909)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/909')\nprint(resp.json())"
+  },
+  {
+    "id": 911,
+    "description": "read file in python (sample 910)",
+    "code": "with open('file_910.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 912,
+    "description": "write to file in python (sample 911)",
+    "code": "with open('output_911.txt', 'w') as f:\n    f.write('data_911')"
+  },
+  {
+    "id": 913,
+    "description": "list comprehension example (sample 912)",
+    "code": "data = [x * 912 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 914,
+    "description": "dictionary comprehension (sample 913)",
+    "code": "mapping = {f'key_{j}': j * 913 for j in range(5)}"
+  },
+  {
+    "id": 915,
+    "description": "exception handling example (sample 914)",
+    "code": "try:\n    value = 100 / 914\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 916,
+    "description": "sort a list in python (sample 915)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=915 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 917,
+    "description": "string manipulation example (sample 916)",
+    "code": "text = 'python coding 916'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 918,
+    "description": "simple function definition (sample 917)",
+    "code": "def process_data_917(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 919,
+    "description": "class definition example (sample 918)",
+    "code": "class Model_918:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 920,
+    "description": "api request with requests (sample 919)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/919')\nprint(resp.json())"
+  },
+  {
+    "id": 921,
+    "description": "read file in python (sample 920)",
+    "code": "with open('file_920.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 922,
+    "description": "write to file in python (sample 921)",
+    "code": "with open('output_921.txt', 'w') as f:\n    f.write('data_921')"
+  },
+  {
+    "id": 923,
+    "description": "list comprehension example (sample 922)",
+    "code": "data = [x * 922 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 924,
+    "description": "dictionary comprehension (sample 923)",
+    "code": "mapping = {f'key_{j}': j * 923 for j in range(5)}"
+  },
+  {
+    "id": 925,
+    "description": "exception handling example (sample 924)",
+    "code": "try:\n    value = 100 / 924\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 926,
+    "description": "sort a list in python (sample 925)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=925 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 927,
+    "description": "string manipulation example (sample 926)",
+    "code": "text = 'python coding 926'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 928,
+    "description": "simple function definition (sample 927)",
+    "code": "def process_data_927(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 929,
+    "description": "class definition example (sample 928)",
+    "code": "class Model_928:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 930,
+    "description": "api request with requests (sample 929)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/929')\nprint(resp.json())"
+  },
+  {
+    "id": 931,
+    "description": "read file in python (sample 930)",
+    "code": "with open('file_930.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 932,
+    "description": "write to file in python (sample 931)",
+    "code": "with open('output_931.txt', 'w') as f:\n    f.write('data_931')"
+  },
+  {
+    "id": 933,
+    "description": "list comprehension example (sample 932)",
+    "code": "data = [x * 932 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 934,
+    "description": "dictionary comprehension (sample 933)",
+    "code": "mapping = {f'key_{j}': j * 933 for j in range(5)}"
+  },
+  {
+    "id": 935,
+    "description": "exception handling example (sample 934)",
+    "code": "try:\n    value = 100 / 934\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 936,
+    "description": "sort a list in python (sample 935)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=935 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 937,
+    "description": "string manipulation example (sample 936)",
+    "code": "text = 'python coding 936'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 938,
+    "description": "simple function definition (sample 937)",
+    "code": "def process_data_937(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 939,
+    "description": "class definition example (sample 938)",
+    "code": "class Model_938:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 940,
+    "description": "api request with requests (sample 939)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/939')\nprint(resp.json())"
+  },
+  {
+    "id": 941,
+    "description": "read file in python (sample 940)",
+    "code": "with open('file_940.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 942,
+    "description": "write to file in python (sample 941)",
+    "code": "with open('output_941.txt', 'w') as f:\n    f.write('data_941')"
+  },
+  {
+    "id": 943,
+    "description": "list comprehension example (sample 942)",
+    "code": "data = [x * 942 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 944,
+    "description": "dictionary comprehension (sample 943)",
+    "code": "mapping = {f'key_{j}': j * 943 for j in range(5)}"
+  },
+  {
+    "id": 945,
+    "description": "exception handling example (sample 944)",
+    "code": "try:\n    value = 100 / 944\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 946,
+    "description": "sort a list in python (sample 945)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=945 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 947,
+    "description": "string manipulation example (sample 946)",
+    "code": "text = 'python coding 946'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 948,
+    "description": "simple function definition (sample 947)",
+    "code": "def process_data_947(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 949,
+    "description": "class definition example (sample 948)",
+    "code": "class Model_948:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 950,
+    "description": "api request with requests (sample 949)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/949')\nprint(resp.json())"
+  },
+  {
+    "id": 951,
+    "description": "read file in python (sample 950)",
+    "code": "with open('file_950.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 952,
+    "description": "write to file in python (sample 951)",
+    "code": "with open('output_951.txt', 'w') as f:\n    f.write('data_951')"
+  },
+  {
+    "id": 953,
+    "description": "list comprehension example (sample 952)",
+    "code": "data = [x * 952 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 954,
+    "description": "dictionary comprehension (sample 953)",
+    "code": "mapping = {f'key_{j}': j * 953 for j in range(5)}"
+  },
+  {
+    "id": 955,
+    "description": "exception handling example (sample 954)",
+    "code": "try:\n    value = 100 / 954\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 956,
+    "description": "sort a list in python (sample 955)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=955 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 957,
+    "description": "string manipulation example (sample 956)",
+    "code": "text = 'python coding 956'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 958,
+    "description": "simple function definition (sample 957)",
+    "code": "def process_data_957(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 959,
+    "description": "class definition example (sample 958)",
+    "code": "class Model_958:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 960,
+    "description": "api request with requests (sample 959)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/959')\nprint(resp.json())"
+  },
+  {
+    "id": 961,
+    "description": "read file in python (sample 960)",
+    "code": "with open('file_960.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 962,
+    "description": "write to file in python (sample 961)",
+    "code": "with open('output_961.txt', 'w') as f:\n    f.write('data_961')"
+  },
+  {
+    "id": 963,
+    "description": "list comprehension example (sample 962)",
+    "code": "data = [x * 962 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 964,
+    "description": "dictionary comprehension (sample 963)",
+    "code": "mapping = {f'key_{j}': j * 963 for j in range(5)}"
+  },
+  {
+    "id": 965,
+    "description": "exception handling example (sample 964)",
+    "code": "try:\n    value = 100 / 964\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 966,
+    "description": "sort a list in python (sample 965)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=965 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 967,
+    "description": "string manipulation example (sample 966)",
+    "code": "text = 'python coding 966'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 968,
+    "description": "simple function definition (sample 967)",
+    "code": "def process_data_967(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 969,
+    "description": "class definition example (sample 968)",
+    "code": "class Model_968:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 970,
+    "description": "api request with requests (sample 969)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/969')\nprint(resp.json())"
+  },
+  {
+    "id": 971,
+    "description": "read file in python (sample 970)",
+    "code": "with open('file_970.txt', 'r') as f:\n    content = f.read()"
+  },
+  {
+    "id": 972,
+    "description": "write to file in python (sample 971)",
+    "code": "with open('output_971.txt', 'w') as f:\n    f.write('data_971')"
+  },
+  {
+    "id": 973,
+    "description": "list comprehension example (sample 972)",
+    "code": "data = [x * 972 for x in range(10) if x % 2 == 0]"
+  },
+  {
+    "id": 974,
+    "description": "dictionary comprehension (sample 973)",
+    "code": "mapping = {f'key_{j}': j * 973 for j in range(5)}"
+  },
+  {
+    "id": 975,
+    "description": "exception handling example (sample 974)",
+    "code": "try:\n    value = 100 / 974\nexcept ZeroDivisionError:\n    print('Division by zero error')"
+  },
+  {
+    "id": 976,
+    "description": "sort a list in python (sample 975)",
+    "code": "items = [5, 2, 9, 1, 5, 6]\nitems.sort(reverse=975 % 2 == 0)\nprint(items)"
+  },
+  {
+    "id": 977,
+    "description": "string manipulation example (sample 976)",
+    "code": "text = 'python coding 976'\nresult = text.upper().split(' ')\nprint(result)"
+  },
+  {
+    "id": 978,
+    "description": "simple function definition (sample 977)",
+    "code": "def process_data_977(data):\n    return [d.strip() for d in data if d]"
+  },
+  {
+    "id": 979,
+    "description": "class definition example (sample 978)",
+    "code": "class Model_978:\n    def __init__(self, name):\n        self.name = name\n    def run(self):\n        return f'Running {self.name}'"
+  },
+  {
+    "id": 980,
+    "description": "api request with requests (sample 979)",
+    "code": "import requests\nresp = requests.get('https://api.example.com/data/979')\nprint(resp.json())"
+  }
+]
