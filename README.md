@@ -54,7 +54,11 @@ This project is my attempt to solve that problem using transformer-based embeddi
 This project was inspired by existing implementations of semantic code search systems. 
 I explored different approaches and built my own version with modifications and improvements.
 
-## Author ✍️
+## Author
 **Aryan Kaushik**
+
+
 Computer Science and Engineering
+
+
 RGIPT Amethi
