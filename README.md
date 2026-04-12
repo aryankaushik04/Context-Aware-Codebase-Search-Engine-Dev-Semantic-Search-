@@ -16,7 +16,7 @@ This project is my attempt to solve that problem using transformer-based embeddi
 * Returns top matching results.
 
 
-## Tech Stak
+## Tech Stack
 * Python
 * PyTorch
 * HuggingFace Transformers (CodeBERT)
